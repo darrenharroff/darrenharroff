@@ -7,14 +7,370 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="header"></header>
     <section class="cover">
-      <div class="cover__title-wrap">
-        <h1 class="cover__title-wrap__title">
-          Hi, I'm Darren Harroff. I'm a front end web developer.
-        </h1>
+      <div class="cover__video-wrap">
+        <video
+          autoplay
+          muted
+          loop
+          src="video/Black - 13495.mp4"
+          class="cover__video-wrap__video"
+        ></video>
+      </div>
+      <h1 class="cover__title" data-aos="left" data-delay="200">
+        Hi, I'm <span class="cover__title--name">Darren Harroff</span>.<br />
+        <span class="cover__title--desc"
+          >I'm a web developer, designer, and more.</span
+        >
+      </h1>
+      <a href="#about" data-aos="right" data-delay="550"><button class="cover__button">Learn More &nbsp; &#129131
+      </button></a>
+    </section>
+    <header class="header">
+      <div class="header__header-wrap">
+        <div class="header__header-wrap__menu-wrap">
+          <ul class="header__header-wrap__menu-wrap__menu">
+            <li class="header__header-wrap__menu-wrap__menu__menu-item">
+              <a
+                href="#"
+                class="header__header-wrap__menu-wrap__menu__menu-item__menu-item-link"
+                >Home</a
+              >
+            </li>
+            <li class="header__header-wrap__menu-wrap__menu__menu-item">
+              <a
+                href="#about"
+                class="header__header-wrap__menu-wrap__menu__menu-item__menu-item-link"
+                >About</a
+              >
+            </li>
+            <li class="header__header-wrap__menu-wrap__menu__menu-item">
+              <a
+                href="#portfolio"
+                class="header__header-wrap__menu-wrap__menu__menu-item__menu-item-link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__header-wrap__menu-wrap__menu__menu-item">
+              <a
+                href="#contact"
+                class="header__header-wrap__menu-wrap__menu__menu-item__menu-item-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__header-wrap__menu-toggle">
+          <div class="header__header-wrap__menu-toggle__bar"></div>
+          <div class="header__header-wrap__menu-toggle__bar"></div>
+          <div class="header__header-wrap__menu-toggle__bar"></div>
+        </div>
+      </div>
+    </header>
+    <section id="about" class="content about">
+      <h2 class="content__title" data-aos="left">About</h2>
+      <div class="content__title-bar" data-aos="right" data-delay="600"></div>
+      <div class="about__values">
+        <div class="about__values__value">
+          <div class="about__values__value__icon-wrap" data-aos="left"> 
+            <img
+              src="icons/checkmark.svg"
+              alt=""
+              class="about__values__value__icon-wrap__icon"
+            />
+          </div>
+          <h3 class="about__values__value__title"data-aos="in-still" data-delay="400">Simple</h3>
+          <p class="about__values__value__desc" data-aos="in-still" data-delay="500">
+            Always clean, no clutter.
+          </p>
+        </div>
+        <div class="about__values__value">
+          <div class="about__values__value__icon-wrap" data-aos="left" data-delay="500">
+            <img
+              src="icons/fingerprint.svg"
+              alt=""
+              class="about__values__value__icon-wrap__icon"
+            />
+          </div>
+          <h3 class="about__values__value__title"data-aos="in-still" data-delay="400">Meaningful</h3>
+          <p class="about__values__value__desc" data-aos="in-still" data-delay="500">
+            Clearly convey who you are.
+          </p>
+        </div>
+        <div class="about__values__value">
+          <div class="about__values__value__icon-wrap" data-aos="left" data-delay="250">
+            <img
+              src="icons/idea.svg"
+              alt=""
+              class="about__values__value__icon-wrap__icon"
+            />
+          </div>
+          <h3 class="about__values__value__title"data-aos="in-still" data-delay="400">Intuitive</h3>
+          <p class="about__values__value__desc" data-aos="in-still" data-delay="500">
+            Easy to use, friendly user interfaces.
+          </p>
+        </div>
+        <div class="about__values__value">
+          <div class="about__values__value__icon-wrap" data-aos="left" data-delay="100">
+            <img
+              src="icons/responsive.svg"
+              alt=""
+              class="about__values__value__icon-wrap__icon"
+            />
+          </div>
+          <h3 class="about__values__value__title"data-aos="in-still" data-delay="400">Responsive</h3>
+          <p class="about__values__value__desc" data-aos="in-still" data-delay="500">
+            Look beautiful on any device.
+          </p>
+        </div>
+      </div>
+      <div class="about__who-am-i">
+        <div class="about__who-am-i__picture-wrap" data-aos="in">
+          <img
+            src="img/darrenharroff.jpg"
+            alt=""
+            class="about__who-am-i__picture-wrap__picture"
+          />
+        </div>
+        <div class="about__who-am-i__content" data-aos="right" data-delay="400">
+          <h2 class="about__who-am-i__content__title">Who am I?</h2>
+          <p class="about__who-am-i__content__desc">
+            I am a front-end web developer, graphic designer, musician,
+            producer, and administrator. I wear many hats, and am
+            always looking to improve my professional skills, which include:
+          </p>
+        </div>
+        <div class="about__who-am-i__skills">
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">HTML</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled html"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">CSS</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled css"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">JavaScript</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled javascript"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">SASS</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled sass"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">Wordpress</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled wordpress"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">Vector Design</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled vector"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">Photo Editing</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled photo"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">
+              Music Prod.
+            </h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled music"
+              ></div>
+            </div>
+          </div>
+
+          <div class="about__who-am-i__skills__topic">
+            <h4 class="about__who-am-i__skills__topic__title">Video Editing</h4>
+            <div class="about__who-am-i__skills__topic__scale">
+              <div
+                data-aos="scaleX-left" data-delay="400" class="about__who-am-i__skills__topic__scale--filled video"
+              ></div>
+            </div>
+          </div>
+          <div class="about__who-am-i__skills__rate">
+            <p class="about__who-am-i__skills__rate__label">1</p>
+            <div class="about__who-am-i__skills__rate__bar"></div>
+            <p class="about__who-am-i__skills__rate__label">5</p>
+            <div class="about__who-am-i__skills__rate__bar"></div>
+            <p class="about__who-am-i__skills__rate__label">10</p>
+          </div>
+        </div>
+        <p class="about__who-am-i__tools" data-aos="in-still"><em>My tools of choice include Microsoft VS Code, PrePros, Wordpress, Elementor Page Builder, Affinity Designer (Illustrator), Affinity Photo (Photoshop), Steinberg Cubase 10.5 Pro, & Davinci Resolve.</em></p>
       </div>
     </section>
+    <section id="portfolio" class="content portfolio">
+      <h2 class="content__title" data-aos="right">Portfolio</h2>
+      <div class="content__title-bar" data-aos="left" data-delay="300"></div>
+      <h4 class="portfolio__subtitle">Current web projects <em>(including this site)</em>.</h4>
+      
+      <div class="portfolio__gallery">
+        <div class="portfolio__gallery__card" data-aos="up">
+          <a href="https://churchatnetwork.org" target="_blank" class="portfolio__gallery__card web-link">
+          <img src="img/gallery/CAN Website Spalsh.png" alt="" class="portfolio__gallery__card__image" />
+          </a>
+          <p class="portfolio__gallery__card__desc"><em>Custom Coded</em></p>
+        </div>
+        
+        <div class="portfolio__gallery__card" data-aos="up" data-delay="500">
+          <a href="https://restorationcity.net" target="_blank" class="portfolio__gallery__card web-link">
+          <img src="img/gallery/Restorationcity Website Splash.png" alt="" class="portfolio__gallery__card__image" />
+          </a>
+          <p class="portfolio__gallery__card__desc"><em>Wordpress</em></p>
+
+        </div>
+      </div>
+
+      <h4 class="portfolio__subtitle">An assortment of some of my graphic projects - logos, slides, info cards, event graphics, and more.</h4>
+      <!-- <p class="portfolio__view-gallery">View Gallery &#129131</p> -->
+      <div class="portfolio__gallery graphics">
+        
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/CAN Info Cards.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/CUH Info Cards.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/EASTER SUNDAY PSALM NIGHT.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/FamilyReunion.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/prayer room.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/First Friday Prayer_med.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Easter_2019_Banner.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Core Values.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Spring Retreat.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/psalmNight2.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Ladies' Prayer_med.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Ladies' Art Worship Bible Study_med.jpg" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/ChristmasParty2018.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card">
+          <img src="img/gallery/MentorMe_ScriptLogo_FB-banner_seafoam.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+        <div class="portfolio__gallery__card darker">
+          <img src="img/gallery/CAN logo clr inline tagline.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+        <div class="portfolio__gallery__card darker">
+          <img src="img/gallery/CUH Transp. Wht.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+        <div class="portfolio__gallery__card darker">
+          <img src="img/gallery/houseChurchLight.png" alt="" class="portfolio__gallery__card__image small" />
+        </div>
+
+        <div class="portfolio__gallery__card darker">
+          <img src="img/gallery/RCLineWht_retina.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Biblical Truth_3.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Internal Transformation_3.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/External Transformation_3.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Family_3.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+        <div class="portfolio__gallery__card ">
+          <img src="img/gallery/Spirit - Led_3.png" alt="" class="portfolio__gallery__card__image " />
+        </div>
+
+      </div>
+
+    <h4 class="portfolio__music">Hear some of my original and covered music on SoundCloud:</h4>
+    <iframe class="portfolio__music__soundcloud" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/980722258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </section>
+    <section id="contact" class="content contact">
+      <h2 class="content__title" data-aos="left">Contact</h2>
+      <div class="content__title-bar" data-aos="right" data-delay="300"></div>
+      <h4 class="contact__subtitle" data-aos="in-still" data-delay="500">Interested in working with me? Reach out any time.</h4>
+      <div class="contact__links" data-aos="up" data-delay="750">
+        <a class="contact__links__link" href="tel:+2144608716">Call Me</a>
+        <a class="contact__links__link" href="mailto:darren.harroff@gmail.com?subject=darrenharroff.me Contact: I'm Interested in Working With You!">Email Me</a>
+       </div>
+    </section>
+    <section class="footer">
+      <div class="footer__footer-wrap">
+        <p class="footer__footer-wrap__copyright">&copy; 2020 Darren Harroff </p>
+        <a href="https://darrenharroff.me" class="footer__footer-wrap__site-link">darrenharroff.me</a>
+      </div>
+    </section>
+    <script src="js/header&nav.js"></script>
     <script src="js/cover.js"></script>
+    <script src="js/animation.js"></script>
   </body>
 </html>
