@@ -423,6 +423,7 @@ body {
 .portfolio {
   background-color: $textLight;
   &__subtitle {
+    text-align: center;
     &:nth-of-type(1) {
       margin-top: $sectionPadding;
     }
@@ -438,21 +439,13 @@ body {
   }
   &__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 1em;
     justify-content: center;
     align-items: center;
     margin: $sectionPadding 0;
-    // &.graphics {
-    //   max-height: 0;
-    //   margin: $sectionPadding 0 0;
-    //   overflow: hidden;
-    //   transition: all 500ms cubic-bezier(1, 0, 0, 1);
-    //   &.visible {
-    //     max-height: 7200px;
-    //     margin: $sectionPadding 0;
-    //   }
-    // }
+    width: 100%;
+    max-width: $maxWidth;
 
     &__card {
       position: relative;
@@ -461,9 +454,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1em;
       cursor: pointer;
       transition: all 150ms ease;
+      margin: 0 auto;
       &:hover {
         transform: scale(1.05);
       }
@@ -484,9 +477,18 @@ body {
       }
       &__image {
         width: 100%;
-        &[src="img/gallery/HouseChurch light.png"] {
-          padding: 0 4em;
+        height: 100%;
+        object-fit: cover;
+        &.small {
+          object-fit: contain;
+          padding: 0 1em;
         }
+      }
+    }
+    &.graphics {
+      .portfolio__gallery__card {
+        width: 375px;
+        height: 250px;
       }
     }
   }
