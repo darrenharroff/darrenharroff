@@ -422,8 +422,11 @@ body {
 
 .portfolio {
   background-color: $textLight;
+
   &__subtitle {
     text-align: center;
+    line-height: 1.5em;
+
     &:nth-of-type(1) {
       margin-top: $sectionPadding;
     }
@@ -439,13 +442,13 @@ body {
   }
   &__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1em;
     justify-content: center;
     align-items: center;
     margin: $sectionPadding 0;
     width: 100%;
-    max-width: $maxWidth;
+    max-width: 1500px;
 
     &__card {
       position: relative;
@@ -468,8 +471,8 @@ body {
       }
       &__desc {
         position: absolute;
-        bottom: 15%;
-        right: 0;
+        bottom: -5%;
+        right: 5%;
         color: $textLight;
         background-color: $primaryClr;
         font-size: 0.8rem;
@@ -483,11 +486,15 @@ body {
           object-fit: contain;
           padding: 0 1em;
         }
+        @media (max-width: 400px) {
+          max-width: 95vw;
+        }
       }
     }
+
     &.graphics {
       .portfolio__gallery__card {
-        width: 375px;
+        width: 350px;
         height: 250px;
       }
     }

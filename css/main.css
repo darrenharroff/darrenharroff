@@ -422,6 +422,7 @@ body {
 }
 .portfolio__subtitle {
   text-align: center;
+  line-height: 1.5em;
 }
 .portfolio__subtitle:nth-of-type(1) {
   margin-top: 6rem;
@@ -437,13 +438,13 @@ body {
 }
 .portfolio__gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1em;
   justify-content: center;
   align-items: center;
   margin: 6rem 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .portfolio__gallery__card {
   position: relative;
@@ -467,8 +468,8 @@ body {
 }
 .portfolio__gallery__card__desc {
   position: absolute;
-  bottom: 15%;
-  right: 0;
+  bottom: -5%;
+  right: 5%;
   color: #f0f0f0;
   background-color: teal;
   font-size: 0.8rem;
@@ -483,8 +484,13 @@ body {
   object-fit: contain;
   padding: 0 1em;
 }
+@media (max-width: 400px) {
+  .portfolio__gallery__card__image {
+    max-width: 95vw;
+  }
+}
 .portfolio__gallery.graphics .portfolio__gallery__card {
-  width: 375px;
+  width: 350px;
   height: 250px;
 }
 .portfolio__music__soundcloud {
