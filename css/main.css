@@ -266,7 +266,7 @@ body {
   grid-template-columns: 1fr 1.5fr;
   gap: 2em;
   width: 100%;
-  max-width: 780px;
+  max-width: 790px;
   justify-content: center;
   align-items: center;
 }
