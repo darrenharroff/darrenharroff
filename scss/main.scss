@@ -546,6 +546,9 @@ body {
     &:hover {
       background-color: rgba(white, 0.1);
     }
+    @media (max-width: 400px) {
+      top: 92%;
+    }
   }
   &__prev {
     left: 2%;
