@@ -57,7 +57,7 @@ body {
     width: 90%;
     z-index: 1;
     @media (min-width: 1000px) {
-      font-size: 2.4rem;
+      font-size: 3.5rem;
     }
     &--name {
       color: $primaryClr;
@@ -337,13 +337,13 @@ body {
             &.html {
               width: 0%;
               &.visible {
-                width: 90%;
+                width: 87%;
               }
             }
             &.css {
               width: 0%;
               &.visible {
-                width: 90%;
+                width: 87%;
               }
             }
             &.javascript {
@@ -355,7 +355,7 @@ body {
             &.sass {
               width: 0%;
               &.visible {
-                width: 70%;
+                width: 71%;
               }
             }
             &.wordpress {
@@ -375,14 +375,14 @@ body {
               width: 0%;
               background-color: $color2;
               &.visible {
-                width: 45%;
+                width: 43%;
               }
             }
             &.music {
               width: 0%;
               background-color: $color3;
               &.visible {
-                width: 90%;
+                width: 85%;
               }
             }
             &.video {

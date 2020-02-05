@@ -50,7 +50,7 @@ body {
 }
 @media (min-width: 1000px) {
   .cover__title {
-    font-size: 2.4rem;
+    font-size: 3.5rem;
   }
 }
 .cover__title--name {
@@ -341,13 +341,13 @@ body {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.html.visible {
-  width: 90%;
+  width: 87%;
 }
 .about__who-am-i__skills__topic__scale--filled.css {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.css.visible {
-  width: 90%;
+  width: 87%;
 }
 .about__who-am-i__skills__topic__scale--filled.javascript {
   width: 0%;
@@ -359,7 +359,7 @@ body {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.sass.visible {
-  width: 70%;
+  width: 71%;
 }
 .about__who-am-i__skills__topic__scale--filled.wordpress {
   width: 0%;
@@ -379,14 +379,14 @@ body {
   background-color: #914343;
 }
 .about__who-am-i__skills__topic__scale--filled.photo.visible {
-  width: 45%;
+  width: 43%;
 }
 .about__who-am-i__skills__topic__scale--filled.music {
   width: 0%;
   background-color: #6a6aa7;
 }
 .about__who-am-i__skills__topic__scale--filled.music.visible {
-  width: 90%;
+  width: 85%;
 }
 .about__who-am-i__skills__topic__scale--filled.video {
   width: 0%;
