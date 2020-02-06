@@ -632,6 +632,7 @@ canvas {
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  position: relative;
   &__footer-wrap {
     display: flex;
     width: 100%;
@@ -643,6 +644,26 @@ canvas {
       &:hover {
         color: grey;
       }
+    }
+  }
+  &__back-to-top {
+    position: absolute;
+    right: 50%;
+    top: -45%;
+    transform: translateX(50%);
+    color: $textLight;
+    background-color: $primaryClr;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em 0.6em;
+    text-decoration: none;
+    &:hover {
+      filter: brightness(130%);
     }
   }
 }

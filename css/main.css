@@ -622,6 +622,7 @@ canvas {
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .footer__footer-wrap {
   display: flex;
@@ -635,6 +636,26 @@ canvas {
 }
 .footer__footer-wrap__site-link:hover {
   color: grey;
+}
+.footer__back-to-top {
+  position: absolute;
+  right: 50%;
+  top: -45%;
+  transform: translateX(50%);
+  color: #f0f0f0;
+  background-color: teal;
+  font-size: 2rem;
+  font-weight: normal;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em 0.6em;
+  text-decoration: none;
+}
+.footer__back-to-top:hover {
+  filter: brightness(130%);
 }
 
 @supports (display: grid) {
