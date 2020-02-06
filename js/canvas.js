@@ -198,7 +198,7 @@ function getDisOf(b1, b2) {
 
 // add balls if there a little balls
 function addBallIfy() {
-  if (balls.length < parseInt((can_w / can_h) * 25)) {
+  if (balls.length < parseInt((can_w / can_h) * 30)) {
     balls.push(getRandomBall());
   }
 }
