@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>darrenharroff.me - Personal Portfolio</title>
+    <title>Darren Harroff's Personal Portfolio</title>
     <meta
       name="description"
-      content="Darren Harroff's personal professional portfolio website."
+      content="Darren Harroff is a front-end web developer, designer, producer, musician, and administrator. This is his personal professional portfolio website."
     />
     <link rel="canonical" href="https://www.darrenharroff.me" />
     <link rel="stylesheet" href="css/main.css" />
@@ -15,12 +15,14 @@
     <section class="cover">
       <canvas id="canvas"></canvas>
       <h1 class="cover__title" data-aos="left" data-delay="200">
-        Hi, I'm <span class="cover__title--name">Darren Harroff</span>.<br />
-        <span class="cover__title--desc"
-          >I'm a web developer, designer, and more.</span
-        >
+        <span>Hi, I'm</span>
+        <span class="cover__title--name">Darren Harroff</span>
+        <span>.</span><br />
       </h1>
-      <a href="#about" data-aos="right" data-delay="550"
+      <h2 class="cover__subtitle" data-aos="right" data-delay="450">
+        I'm a web developer, designer, and more.
+      </h2>
+      <a href="#about" data-aos="left" data-delay="750"
         ><button class="cover__button">Learn More</button></a
       >
     </section>
@@ -540,7 +542,7 @@
         Hear some of my original and covered music on SoundCloud:
       </h4>
       <iframe
-        data-aos="up"
+        data-aos="in-still"
         data-delay="200"
         class="portfolio__music__soundcloud"
         height="450"
@@ -556,9 +558,17 @@
       <h4 class="contact__subtitle" data-aos="in-still" data-delay="500">
         Interested in working with me? Reach out any time.
       </h4>
-      <div class="contact__links" data-aos="up" data-delay="750">
-        <a class="contact__links__link" href="tel:+2144608716">Call Me</a>
+      <div class="contact__links">
         <a
+          data-aos="left"
+          data-delay="500"
+          class="contact__links__link"
+          href="tel:+2144608716"
+          >Call Me</a
+        >
+        <a
+          data-aos="right"
+          data-delay="500"
           class="contact__links__link"
           href="mailto:darren.harroff@gmail.com?subject=darrenharroff.me Contact: I'm Interested in Working With You!"
           >Email Me</a
@@ -578,7 +588,6 @@
     </section>
     <script src="js/canvas.js"></script>
     <script src="js/header&nav.js"></script>
-    <script src="js/cover.js"></script>
     <script src="js/animation.js"></script>
   </body>
 </html>

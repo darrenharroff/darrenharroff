@@ -19,12 +19,12 @@ var ball = {
     g: 255,
     b: 255
   },
-  R = 2,
+  R = 1.3,
   balls = [],
   alpha_f = 0.03,
   alpha_phase = 0,
   // Line
-  link_line_width = 0.8,
+  link_line_width = 0.5,
   dis_limit = 260,
   add_mouse_point = true,
   mouse_in = false,
@@ -198,7 +198,7 @@ function getDisOf(b1, b2) {
 
 // add balls if there a little balls
 function addBallIfy() {
-  if (balls.length < parseInt((can_w / can_h) * 30)) {
+  if (balls.length < parseInt(Math.max(can_w, can_h) / 35)) {
     balls.push(getRandomBall());
   }
 }

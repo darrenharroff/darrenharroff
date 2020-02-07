@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #fff;
   color: rgb(31, 31, 31);
 }
@@ -34,14 +34,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   user-select: none;
+  position: relative;
 
   &__title {
-    color: white;
+    color: $textLight;
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: lighter;
     min-width: 300px;
     width: 90%;
     z-index: 1;
@@ -50,11 +51,20 @@ body {
     }
     &--name {
       color: $primaryClr;
-      font-weight: 600;
+      font-weight: bold;
       letter-spacing: 1px;
     }
-    &--desc {
-      font-size: 0.55em;
+  }
+  &__subtitle {
+    color: $textLight;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.025em;
+    font-weight: lighter;
+    z-index: 1;
+    margin-top: 0.25em;
+    @media (min-width: 1000px) {
+      font-size: 1.8rem;
     }
   }
   &__button {
@@ -67,10 +77,14 @@ body {
     color: $textLight;
     padding: 0.5em 1.5em;
     margin-top: 1.5em;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 150ms ease;
     &:hover {
       background-color: rgba($textLight, 0.2);
+    }
+    &:focus {
+      outline: none;
     }
   }
 }
@@ -81,7 +95,11 @@ canvas {
   left: 0;
   height: calc(100% + 60px);
   max-width: 100vw;
-  background-color: darken($primaryClr, 20%);
+  background: linear-gradient(
+    170deg,
+    darken($primaryClr, 15%) 0%,
+    $secClr 100%
+  );
   opacity: 0.7;
 }
 
@@ -91,7 +109,7 @@ canvas {
   top: 0;
   width: 100%;
   z-index: 10000;
-  height: 65px;
+  height: 60px;
   &__header-wrap {
     display: flex;
     align-items: center;
@@ -333,31 +351,31 @@ canvas {
             &.html {
               width: 0%;
               &.visible {
-                width: 87%;
+                width: 85%;
               }
             }
             &.css {
               width: 0%;
               &.visible {
-                width: 87%;
+                width: 85%;
               }
             }
             &.javascript {
               width: 0%;
               &.visible {
-                width: 65%;
+                width: 68%;
               }
             }
             &.sass {
               width: 0%;
               &.visible {
-                width: 71%;
+                width: 74%;
               }
             }
             &.wordpress {
               width: 0%;
               &.visible {
-                width: 60%;
+                width: 59%;
               }
             }
             &.vector {
@@ -499,7 +517,7 @@ canvas {
   }
   &__music {
     &__soundcloud {
-      margin: $sectionPadding 0 0;
+      margin: $sectionPadding 0 10vh;
       width: 100%;
       max-width: $maxWidth;
     }
@@ -592,8 +610,19 @@ canvas {
 }
 
 .contact {
+  clip-path: polygon(0 0, 50% 10vh, 100% 00%, 100% 100%, 0 100%);
+  margin-top: -10vh;
+  background-color: $secClr;
+  .content__title {
+    color: $textLight;
+    margin-top: 10vh;
+  }
+  .content__title-bar {
+    background-color: $primaryClr;
+  }
   &__subtitle {
     margin: $sectionPadding 0;
+    color: $textLight;
   }
   &__links {
     display: flex;
@@ -648,8 +677,8 @@ canvas {
   }
   &__back-to-top {
     position: absolute;
-    right: 50%;
-    top: -45%;
+    right: 10%;
+    top: -100%;
     transform: translateX(50%);
     color: $textLight;
     background-color: $primaryClr;
@@ -660,8 +689,9 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em 1em 0.6em;
+    padding: 1em 0.85em 0.6em;
     text-decoration: none;
+
     &:hover {
       filter: brightness(130%);
     }
