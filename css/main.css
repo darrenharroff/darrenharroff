@@ -281,7 +281,7 @@ canvas {
   grid-template-columns: 1fr 1.5fr;
   gap: 2em;
   width: 100%;
-  max-width: 790px;
+  max-width: 820px;
   justify-content: center;
   align-items: center;
 }
@@ -298,7 +298,7 @@ canvas {
 .about__who-am-i__picture-wrap__picture {
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .about__who-am-i__content {
   width: 100%;
@@ -317,6 +317,22 @@ canvas {
 .about__who-am-i__content__desc {
   line-height: 1.5em;
 }
+.about__who-am-i__content__icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 60px;
+  margin-top: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.about__who-am-i__content__icons__icon {
+  height: 90%;
+  width: 100%;
+}
+.about__who-am-i__content__icons__icon[src="icons/music.svg"], .about__who-am-i__content__icons__icon[src="icons/mixer.svg"] {
+  height: 70%;
+}
 .about__who-am-i__skills {
   margin: 6rem 0 0;
   padding-top: 2em;
@@ -327,6 +343,8 @@ canvas {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 10px 0;
+  border-radius: 50px;
+  overflow: hidden;
 }
 .about__who-am-i__skills__topic__title {
   background-color: teal;
@@ -474,15 +492,14 @@ canvas {
 .portfolio__gallery__card:hover {
   transform: scale(1.025);
 }
-.portfolio__gallery__card.dark {
-  background-color: #646464;
-}
 .portfolio__gallery__card.darker {
   background-color: #2b2b2b;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .portfolio__gallery__card__desc {
   position: absolute;
-  bottom: -5%;
+  bottom: 10%;
   right: 5%;
   color: #f0f0f0;
   background-color: teal;
@@ -493,6 +510,7 @@ canvas {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .portfolio__gallery__card__image.small {
   object-fit: contain;
@@ -508,7 +526,7 @@ canvas {
   height: 250px;
 }
 .portfolio__music__soundcloud {
-  margin: 6rem 0 10vh;
+  margin: 6rem 0 0;
   width: 100%;
   max-width: 1200px;
 }
@@ -601,14 +619,21 @@ canvas {
 }
 
 .contact {
-  -webkit-clip-path: polygon(0 0, 50% 10vh, 100% 0%, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 50% 10vh, 100% 0%, 100% 100%, 0 100%);
-  margin-top: -10vh;
   background-color: #181827;
+  position: relative;
+}
+.contact__divider {
+  position: absolute;
+  background-color: #f0f0f0;
+  height: 10vh;
+  width: 100%;
+  top: -5vh;
+  left: 0;
+  -webkit-clip-path: ellipse(60% 55% at 48% 30%);
+          clip-path: ellipse(60% 55% at 48% 30%);
 }
 .contact .content__title {
   color: #f0f0f0;
-  margin-top: 10vh;
 }
 .contact .content__title-bar {
   background-color: teal;
