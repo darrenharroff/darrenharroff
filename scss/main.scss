@@ -3,8 +3,10 @@
 $primaryClr: teal;
 $secClr: rgb(24, 24, 39);
 $textLight: rgb(240, 240, 240);
-$color2: rgb(145, 67, 67);
-$color3: rgb(106, 106, 167);
+
+$barClr1: lighten($secClr, 15%);
+$barClr2: rgb(126, 41, 41);
+$barClr3: rgb(112, 80, 143);
 
 $sectionPadding: 6rem;
 $maxWidth: 1200px;
@@ -321,7 +323,7 @@ canvas {
       }
       &__icons {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
         height: 60px;
         margin-top: 2em;
@@ -330,9 +332,9 @@ canvas {
         &__icon {
           height: 90%;
           width: 100%;
-          &[src="icons/music.svg"],
+
           &[src="icons/mixer.svg"] {
-            height: 70%;
+            padding: 5px 0;
           }
         }
       }
@@ -365,64 +367,68 @@ canvas {
             top: 0;
             left: 0;
             height: 100%;
-            background-color: lighten($secClr, 15%);
             transition: width 750ms ease;
             &.html {
               width: 0%;
               &.visible {
                 width: 85%;
+                background-color: $barClr1;
               }
             }
             &.css {
               width: 0%;
               &.visible {
                 width: 85%;
+                background-color: $barClr1;
               }
             }
             &.javascript {
               width: 0%;
               &.visible {
                 width: 68%;
+                background-color: $barClr1;
               }
             }
             &.sass {
               width: 0%;
               &.visible {
                 width: 74%;
+                background-color: $barClr1;
               }
             }
             &.wordpress {
               width: 0%;
               &.visible {
                 width: 59%;
+                background-color: $barClr1;
               }
             }
             &.vector {
               width: 0%;
-              background-color: $color2;
               &.visible {
                 width: 65%;
+                background-color: $barClr2;
               }
             }
             &.photo {
               width: 0%;
-              background-color: $color2;
               &.visible {
                 width: 43%;
+                background-color: $barClr2;
               }
             }
             &.music {
               width: 0%;
-              background-color: $color3;
               &.visible {
                 width: 85%;
+                background-color: $barClr3;
               }
             }
             &.video {
               width: 0%;
-              background-color: $color3;
               &.visible {
                 width: 42%;
+                background-color: $barClr3;
               }
             }
           }

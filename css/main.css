@@ -319,7 +319,7 @@ canvas {
 }
 .about__who-am-i__content__icons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   height: 60px;
   margin-top: 2em;
@@ -330,8 +330,8 @@ canvas {
   height: 90%;
   width: 100%;
 }
-.about__who-am-i__content__icons__icon[src="icons/music.svg"], .about__who-am-i__content__icons__icon[src="icons/mixer.svg"] {
-  height: 70%;
+.about__who-am-i__content__icons__icon[src="icons/mixer.svg"] {
+  padding: 5px 0;
 }
 .about__who-am-i__skills {
   margin: 6rem 0 0;
@@ -364,7 +364,6 @@ canvas {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #353556;
   transition: width 750ms ease;
 }
 .about__who-am-i__skills__topic__scale--filled.html {
@@ -372,58 +371,63 @@ canvas {
 }
 .about__who-am-i__skills__topic__scale--filled.html.visible {
   width: 85%;
+  background-color: #353556;
 }
 .about__who-am-i__skills__topic__scale--filled.css {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.css.visible {
   width: 85%;
+  background-color: #353556;
 }
 .about__who-am-i__skills__topic__scale--filled.javascript {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.javascript.visible {
   width: 68%;
+  background-color: #353556;
 }
 .about__who-am-i__skills__topic__scale--filled.sass {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.sass.visible {
   width: 74%;
+  background-color: #353556;
 }
 .about__who-am-i__skills__topic__scale--filled.wordpress {
   width: 0%;
 }
 .about__who-am-i__skills__topic__scale--filled.wordpress.visible {
   width: 59%;
+  background-color: #353556;
 }
 .about__who-am-i__skills__topic__scale--filled.vector {
   width: 0%;
-  background-color: #914343;
 }
 .about__who-am-i__skills__topic__scale--filled.vector.visible {
   width: 65%;
+  background-color: #7e2929;
 }
 .about__who-am-i__skills__topic__scale--filled.photo {
   width: 0%;
-  background-color: #914343;
 }
 .about__who-am-i__skills__topic__scale--filled.photo.visible {
   width: 43%;
+  background-color: #7e2929;
 }
 .about__who-am-i__skills__topic__scale--filled.music {
   width: 0%;
-  background-color: #6a6aa7;
 }
 .about__who-am-i__skills__topic__scale--filled.music.visible {
   width: 85%;
+  background-color: #70508f;
 }
 .about__who-am-i__skills__topic__scale--filled.video {
   width: 0%;
-  background-color: #6a6aa7;
 }
 .about__who-am-i__skills__topic__scale--filled.video.visible {
   width: 42%;
+  background-color: #70508f;
 }
 .about__who-am-i__skills__rate {
   display: flex;
