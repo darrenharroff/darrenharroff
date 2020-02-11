@@ -27,7 +27,6 @@ modal.append(modalClose);
 document.body.append(modal);
 
 galleryCards.forEach(card => {
-  card.setAttribute("data-aos", "in-still");
   card.addEventListener("click", e => {
     overlay.classList.add("visible");
     modal.classList.add("visible");
