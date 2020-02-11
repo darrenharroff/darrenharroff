@@ -290,9 +290,10 @@ canvas {
     grid-template-columns: 1fr 1.5fr;
     gap: 2em;
     width: 100%;
-    max-width: 820px;
+    max-width: 800px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     &__picture-wrap {
       width: 150px;
@@ -368,7 +369,7 @@ canvas {
             top: 0;
             left: 0;
             height: 100%;
-            transition: width 750ms ease;
+            // transition: width 1500ms ease;
             &.html {
               width: 0%;
               &.visible {
@@ -404,7 +405,7 @@ canvas {
                 background-color: $barClr1;
               }
             }
-            &.vector {
+            &.graphic {
               width: 0%;
               &.visible {
                 width: 65%;
@@ -908,7 +909,7 @@ canvas {
     transform: scaleX(0);
     transform-origin: left;
     &.anim {
-      animation: scaleX 500ms ease 250ms forwards;
+      animation: scaleX 1000ms ease-in-out 250ms forwards;
     }
   }
 }
@@ -919,7 +920,7 @@ canvas {
     transform: scaleX(0);
     transform-origin: right;
     &.anim {
-      animation: scaleX 500ms ease 250ms forwards;
+      animation: scaleX 1000ms ease-in-out 250ms forwards;
     }
   }
 }
