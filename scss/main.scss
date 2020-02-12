@@ -495,12 +495,12 @@ canvas {
   &__gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1em;
+    // gap: 1em;
     justify-content: center;
     align-items: center;
     margin: $sectionPadding 0;
-    width: 100%;
-    max-width: 1500px;
+    width: 100vw;
+    max-width: 1745px;
 
     &__card {
       position: relative;
@@ -511,14 +511,17 @@ canvas {
       align-items: center;
       cursor: pointer;
       transition: all 150ms ease;
-      margin: 0 auto;
+      // margin: 0 auto;
+
+      overflow: hidden;
 
       &:hover {
-        transform: scale(1.025);
+        // transform: scale(1.025);
+        // z-index: 5;
       }
       &.darker {
         background-color: rgb(43, 43, 43);
-        border-radius: 10px;
+        // border-radius: 10px;
         overflow: hidden;
       }
       &__desc {
@@ -529,26 +532,34 @@ canvas {
         background-color: $primaryClr;
         font-size: 0.8rem;
         padding: 0.5em 1.5em;
+        z-index: 6;
         clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
       }
       &__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        transition: transform 150ms ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+        // border-radius: 10px;
         &.small {
           object-fit: contain;
           padding: 0 1em;
         }
-        @media (max-width: 400px) {
-          max-width: 95vw;
+        &.top-center {
+          object-position: 50% 10%;
         }
+        // @media (max-width: 400px) {
+        //   max-width: 95vw;
+        // }
       }
     }
 
     &.graphics {
       .portfolio__gallery__card {
-        width: 350px;
+        // width: 350px;
         height: 250px;
       }
     }
