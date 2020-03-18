@@ -1,6 +1,7 @@
 const galleryCards = document.querySelectorAll(
   ".graphics > .portfolio__gallery__card"
 );
+const lazyImages = document.querySelectorAll(".lazy");
 const overlay = document.createElement("div");
 overlay.className = "overlay";
 document.body.append(overlay);
