@@ -1,8 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-book.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-bookItalic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-medium.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
 $primaryClr: #008080;
 $secClr: #181827;
 $textLight: rgb(240, 240, 240);
+$textDark: rgba(43, 43, 43, 0.7);
+$textDarkHeading: rgb(43, 43, 43);
 
 $barClr1: lighten($secClr, 15%);
 $barClr2: rgb(126, 41, 41);
@@ -23,10 +55,17 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Circular Pro", Helvetica, Arial, sans-serif;
   font-variant-ligatures: no-common-ligatures;
   background-color: #fff;
-  color: rgb(31, 31, 31);
+  color: $textDark;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+  color: $textDarkHeading;
 }
 
 .cover {
