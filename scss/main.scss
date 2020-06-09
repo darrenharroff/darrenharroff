@@ -157,6 +157,19 @@ canvas {
     align-items: center;
     width: 100%;
     position: relative;
+    &__logo {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      margin: 0 20px;
+      margin-right: auto;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      @media (min-width: 1000px) {
+        margin-left: 10vw;
+      }
+    }
     &__menu-toggle {
       width: 30px;
       height: 20px;
@@ -214,6 +227,7 @@ canvas {
       &.toggled {
         height: 305px;
       }
+
       &__menu {
         margin: 2em 0;
         &__menu-item {
@@ -327,7 +341,7 @@ canvas {
   &__who-am-i {
     margin: $sectionPadding 0 0;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
     gap: 2em;
     width: 100%;
     max-width: 800px;
@@ -339,7 +353,7 @@ canvas {
       width: 150px;
       height: 150px;
       margin: 0 auto;
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         grid-column: span 2;
       }
       &__picture {
@@ -350,7 +364,7 @@ canvas {
     }
     &__content {
       width: 100%;
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         margin-top: 2em;
         grid-column: span 2;
       }
@@ -385,6 +399,10 @@ canvas {
       margin: $sectionPadding 0 0;
       padding-top: 2em;
       grid-column: span 2;
+      @media (max-width: 600px) {
+        margin-top: 2rem;
+      }
+
       &__topic {
         width: 100%;
         display: grid;
@@ -499,6 +517,9 @@ canvas {
       grid-column: span 2;
       margin: $sectionPadding 0 0;
       font-size: 0.9rem;
+      @media (max-width: 600px) {
+        margin-top: 2rem;
+      }
     }
   }
 }
