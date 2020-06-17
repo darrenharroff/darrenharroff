@@ -152,7 +152,7 @@ canvas {
   width: 100%;
   z-index: 10000;
   height: 60px;
-  &__header-wrap {
+  &__wrap {
     display: flex;
     align-items: center;
     width: 100%;
@@ -201,15 +201,15 @@ canvas {
         transition: bottom 150ms ease 150ms, transform 150ms ease;
       }
       &.active {
-        .header__header-wrap__menu-toggle__bar:nth-of-type(1) {
+        .header__wrap__menu-toggle__bar:nth-of-type(1) {
           top: calc(50% - 1.5px);
           transform: rotate(45deg);
           transition: top 150ms ease, transform 150ms ease 150ms;
         }
-        .header__header-wrap__menu-toggle__bar:nth-of-type(2) {
+        .header__wrap__menu-toggle__bar:nth-of-type(2) {
           transform: scaleX(0);
         }
-        .header__header-wrap__menu-toggle__bar:nth-of-type(3) {
+        .header__wrap__menu-toggle__bar:nth-of-type(3) {
           bottom: calc(50% - 1.5px);
           transform: rotate(-45deg);
           transition: bottom 150ms ease, transform 150ms ease 150ms;
@@ -230,13 +230,13 @@ canvas {
 
       &__menu {
         margin: 2em 0;
-        &__menu-item {
+        &__item {
           display: flex;
           justify-content: center;
           align-items: center;
           height: 60px;
           width: 100%;
-          &__menu-item-link {
+          &__link {
             display: flex;
             align-items: center;
             text-decoration: none;
