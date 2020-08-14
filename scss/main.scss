@@ -339,7 +339,7 @@ canvas {
     }
   }
   &__who-am-i {
-    margin: $sectionPadding 0 0;
+    margin: 2em 0 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2em;
@@ -359,7 +359,7 @@ canvas {
       &__picture {
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 150px;
       }
     }
     &__content {
@@ -513,9 +513,14 @@ canvas {
         }
       }
     }
+    &__desc {
+      grid-column: span 2;
+      line-height: 1.5em;
+    }
     &__tools {
       grid-column: span 2;
-      margin: $sectionPadding 0 0;
+      height: 100%;
+      // margin: $sectionPadding 0 0;
       font-size: 0.9rem;
       @media (max-width: 600px) {
         margin-top: 2rem;
@@ -527,6 +532,7 @@ canvas {
 .portfolio {
   background-color: $textLight;
   position: relative;
+  padding-bottom: 0;
   &__divider {
     position: absolute;
     background-color: white;
