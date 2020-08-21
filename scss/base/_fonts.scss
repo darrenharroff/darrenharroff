@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-book.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-bookItalic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-medium.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  src: local("Circular Pro"),
+    url(/fonts/lineto-circular-pro/lineto-circular-pro-bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}

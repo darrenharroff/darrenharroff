@@ -33,28 +33,74 @@
       gtag("config", "UA-158193702-1");
     </script>
   </head>
+
   <body>
     <section class="cover">
-      <canvas id="canvas"></canvas>
-      <h1 class="cover__title" data-aos="left" data-delay="250">
-        <span>Hi, I'm</span>
-        <span class="cover__title--name">Darren Harroff</span>
-        <br />
-      </h1>
-      <h2 class="cover__subtitle" data-aos="right" data-delay="250">
-        I'm a web developer, designer, and more.
-      </h2>
-      <a href="#about" data-aos="up" data-delay="350"
-        ><button class="cover__button">Learn More</button></a
-      >
-    </section>
-    <header class="header">
-      <div class="header__wrap">
+      <div class="cover__wrap">
         <img
           src="icons/Darren Harroff Logo.png"
           alt="Darren Harroff Icon"
-          class="header__wrap__logo"
+          class="cover__wrap__logo"
+          data-aos="in"
         />
+        <h1 class="cover__wrap__title" data-aos="up" data-delay="300">
+          <span>Hey, I'm</span>
+          <span class="cover__wrap__title--name">Darren.</span>
+          <br />
+        </h1>
+        <h2 class="cover__wrap__subtitle" data-aos="up" data-delay="500">
+          I'm a web developer, designer, and more.
+        </h2>
+        <a
+          href="#about"
+          class="cover__wrap__button btn-1"
+          data-aos="up"
+          data-delay="800"
+          ><button>Learn More</button></a
+        >
+        <div class="cover__wrap__icons">
+          <img
+            src="/img/blob-1.svg"
+            alt=""
+            class="cover__wrap__icons__blob cover__wrap__icons__blob--left"
+          />
+          <img
+            src="/img/blob-2.svg"
+            alt=""
+            class="cover__wrap__icons__blob cover__wrap__icons__blob--right"
+          />
+          <img
+            src="/icons/splashicons1.svg"
+            alt=""
+            class="cover__wrap__icons--left"
+            data-aos="left"
+            data-delay="500"
+          />
+          <img
+            src="/icons/splashicons2.svg"
+            alt=""
+            class="cover__wrap__icons--right"
+            data-aos="right"
+            data-delay="500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <header
+      class="header"
+      data-aos
+      data-entrypoint="-50%"
+      data-reanimate="true"
+    >
+      <div class="header__logo-wrap">
+        <img
+          src="icons/Darren Harroff Logo.png"
+          alt="Darren Harroff Icon"
+          class="header__logo-wrap__logo"
+        />
+      </div>
+      <div class="header__wrap">
         <div class="header__wrap__menu-wrap">
           <ul class="header__wrap__menu-wrap__menu">
             <li class="header__wrap__menu-wrap__menu__item">
@@ -86,694 +132,41 @@
         <div class="header__wrap__menu-toggle">
           <div class="header__wrap__menu-toggle__bar"></div>
           <div class="header__wrap__menu-toggle__bar"></div>
-          <div class="header__wrap__menu-toggle__bar"></div>
         </div>
       </div>
     </header>
 
-    <section id="about" class="content about">
-      <h2 class="content__title" data-aos="left">About</h2>
-      <div class="content__title-bar" data-aos="right" data-delay="600"></div>
-      <div class="about__values">
-        <div class="about__values__value">
-          <div class="about__values__value__icon-wrap" data-aos="left">
-            <img
-              src="icons/checkmark.svg"
-              alt="check icon"
-              class="about__values__value__icon-wrap__icon"
-            />
-          </div>
-          <h3
-            class="about__values__value__title"
-            data-aos="in-still"
-            data-delay="400"
-          >
-            Simple
-          </h3>
-          <p
-            class="about__values__value__desc"
-            data-aos="in-still"
-            data-delay="500"
-          >
-            Always clean, no clutter.
-          </p>
-        </div>
-        <div class="about__values__value">
-          <div
-            class="about__values__value__icon-wrap"
-            data-aos="left"
-            data-delay="500"
-          >
-            <img
-              src="icons/fingerprint.svg"
-              alt="fingerprint icon"
-              class="about__values__value__icon-wrap__icon"
-            />
-          </div>
-          <h3
-            class="about__values__value__title"
-            data-aos="in-still"
-            data-delay="400"
-          >
-            Meaningful
-          </h3>
-          <p
-            class="about__values__value__desc"
-            data-aos="in-still"
-            data-delay="500"
-          >
-            Clearly convey who you are.
-          </p>
-        </div>
-        <div class="about__values__value">
-          <div
-            class="about__values__value__icon-wrap"
-            data-aos="left"
-            data-delay="250"
-          >
-            <img
-              src="icons/idea.svg"
-              alt="lightbulb icon"
-              class="about__values__value__icon-wrap__icon"
-            />
-          </div>
-          <h3
-            class="about__values__value__title"
-            data-aos="in-still"
-            data-delay="400"
-          >
-            Intuitive
-          </h3>
-          <p
-            class="about__values__value__desc"
-            data-aos="in-still"
-            data-delay="500"
-          >
-            Easy to use, friendly user interfaces.
-          </p>
-        </div>
-        <div class="about__values__value">
-          <div
-            class="about__values__value__icon-wrap"
-            data-aos="left"
-            data-delay="100"
-          >
-            <img
-              src="icons/responsive.svg"
-              alt="responsive icon"
-              class="about__values__value__icon-wrap__icon"
-            />
-          </div>
-          <h3
-            class="about__values__value__title"
-            data-aos="in-still"
-            data-delay="400"
-          >
-            Responsive
-          </h3>
-          <p
-            class="about__values__value__desc"
-            data-aos="in-still"
-            data-delay="500"
-          >
-            Look great on any device.
-          </p>
-        </div>
-      </div>
-      <div class="about__who-am-i">
-        <div class="about__who-am-i__picture-wrap" data-aos="in">
-          <img
-            src="img/darrenharroff.jpg"
-            alt="Darren Harroff Picture"
-            class="about__who-am-i__picture-wrap__picture"
-          />
-        </div>
-        <div class="about__who-am-i__content">
-          <h2
-            class="about__who-am-i__content__title"
-            data-aos="right"
-            data-delay="200"
-          >
-            Who am I?
+    <section id="about" class="about">
+      <div class="about__wrap">
+        <div class="about__wrap__intro">
+          <h2 class="about__wrap__intro__title">
+            Nice to <span>(virtually)</span> meet you!
           </h2>
-          <p
-            class="about__who-am-i__content__desc"
-            data-aos="right"
-            data-delay="400"
-          >
-            I am a front-end web developer & designer. I enjoy helping small
-            businesses, non-profits, and individuals find their place on the
-            web. I love learning, taking on new challenges, and pushing myself
-            to grow in my professional and creative skills.
+          <p class="about__wrap__intro__desc">
+            I am a front-end web developer & designer. Since beginning my
+            journey in web developement in 2018, I have enjoyed helping small
+            businesses, non-profits, and individuals find their place on the web
+            simply and affordably. I love learning, taking on new challenges,
+            and pushing myself to grow in my professional and creative skills.
           </p>
-          <!-- <div class="about__who-am-i__content__icons">
-            <img
-              src="icons/web-development.svg"
-              alt="web developement icon"
-              class="about__who-am-i__content__icons__icon"
-              data-aos="in"
-              data-delay="500"
-            />
-            <img
-              src="icons/pencil.svg"
-              alt="pencil icon"
-              class="about__who-am-i__content__icons__icon"
-              data-aos="in"
-              data-delay="600"
-            />
-
-            <img
-              src="icons/mixer.svg"
-              alt="mixer icon"
-              class="about__who-am-i__content__icons__icon"
-              data-aos="in"
-              data-delay="800"
-            />
-          </div> -->
         </div>
-        <!-- <div class="about__who-am-i__skills">
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">HTML</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled html"
-              ></div>
-            </div>
-          </div>
+      </div>
+    </section>
 
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">CSS</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled css"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">JavaScript</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled javascript"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">SASS</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled sass"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">Wordpress</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled wordpress"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">
-              Graphic Design
-            </h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled graphic"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">Photo Editing</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled photo"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">
-              Music Prod.
-            </h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled music"
-              ></div>
-            </div>
-          </div>
-
-          <div class="about__who-am-i__skills__topic">
-            <h4 class="about__who-am-i__skills__topic__title">Video Editing</h4>
-            <div class="about__who-am-i__skills__topic__scale">
-              <div
-                data-aos="scaleX-left"
-                data-delay="400"
-                class="about__who-am-i__skills__topic__scale--filled video"
-              ></div>
-            </div>
-          </div>
-          <div class="about__who-am-i__skills__rate">
-            <p class="about__who-am-i__skills__rate__label">1</p>
-            <div class="about__who-am-i__skills__rate__bar"></div>
-            <p class="about__who-am-i__skills__rate__label">5</p>
-            <div class="about__who-am-i__skills__rate__bar"></div>
-            <p class="about__who-am-i__skills__rate__label">10</p>
-          </div>
-        </div> -->
-        <p class="about__who-am-i__desc" data-aos="left" data-delay="600">
-          Proficient in
-          <strong>HTML, CSS, JavaScript, SASS, & Wordpress</strong>, I love to
-          make
-          <a href="https://jamstack.org/" target="_blank">JAMstack</a>-inspired
-          websites and web apps that are simple, fast, and easy on the eyes.
-          Most of my experience is in freelancing, focusing on 1-1 client
-          relationships and building final products perfectly tailored to their
-          needs.
+    <footer class="footer">
+      <div class="footer__wrap">
+        <p class="footer__wrap__copyright">
+          Handmade by Darren Harroff &copy; 2020
         </p>
-        <p class="about__who-am-i__tools" data-aos="in-still" data-delay="800">
-          <em
-            >My tools of choice include Visual Studio Code, PrePros, Netlify,
-            Wordpress, Elementor, Affinity Designer, & Affinity Photo.</em
-          >
-        </p>
-      </div>
-    </section>
-
-    <section id="portfolio" class="content portfolio">
-      <div class="portfolio__divider"></div>
-
-      <h2 class="content__title" data-aos="right">Portfolio</h2>
-      <div class="content__title-bar" data-aos="left" data-delay="300"></div>
-      <h4 class="portfolio__subtitle">
-        Current web projects <em>(including this site - more coming soon)</em>.
-      </h4>
-
-      <div class="portfolio__gallery web-projects">
-        <div class="portfolio__gallery__card" data-aos="in-still">
-          <a
-            href="https://churchatnetwork.org"
-            target="_blank"
-            class="portfolio__gallery__card web-link"
-          >
-            <img
-              data-src="img/gallery/CAN Website Spalsh.jpg"
-              alt="Church At Network Website Screenshot"
-              class="lazy portfolio__gallery__card__image"
-            />
-          </a>
-          <p class="portfolio__gallery__card__desc"><em>Custom Coded</em></p>
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="500"
-        >
-          <a
-            href="https://www.meetwithabba.org"
-            target="_blank"
-            class="portfolio__gallery__card web-link"
-          >
-            <img
-              data-src="img/gallery/meetwithabba.png"
-              alt="Meet With Abba Website Screenshot"
-              class="lazy portfolio__gallery__card__image"
-            />
-          </a>
-          <p class="portfolio__gallery__card__desc"><em>Custom Coded</em></p>
-        </div>
-      </div>
-      <!-- 
-      <h4 class="portfolio__subtitle">
-        An assortment of graphic projects - logos, slides, info cards, event
-        graphics, and more.<br /><em style="font-weight: normal;"
-          >- Click to enlarge -</em
-        >
-      </h4>
-      <div class="portfolio__gallery graphics">
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/MinistryOfReconciliation.png"
-            alt="Ministry of Recociliation graphic"
-            class="lazy portfolio__gallery__card__image top-center"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/CAN Info Cards.jpg"
-            alt="Church At Network Info Cards"
-            class="lazy portfolio__gallery__card__image top-center"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/CUH Info Cards.jpg"
-            alt="Church At UH Info Cards"
-            class="lazy portfolio__gallery__card__image top-center"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/EASTER SUNDAY PSALM NIGHT.jpg"
-            alt="Easter Sunday Psalm Night Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/FamilyReunion.jpg"
-            alt="Family Reunion Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/prayer room.jpg"
-            alt="Prayer Room Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/First Friday Prayer_med.jpg"
-            alt="First Friday Prayer Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Easter_2019_Banner.jpg"
-            alt="Eater 2019 Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Core Values.jpg"
-            alt="Core Values Series Slide"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Spring Retreat.jpg"
-            alt="Spring Retreat Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/psalmNight2.jpg"
-            alt="Psalm Night 2 Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Ladies' Prayer_med.jpg"
-            alt="Ladies' Prayer Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Ladies' Art Worship Bible Study_med.jpg"
-            alt="Ladies' Art Worship Bible Study Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/ChristmasParty2018.jpg"
-            alt="Christmas Party 2018 Event Card"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/MentorMe_ScriptLogo_FB-banner_seafoam.png"
-            alt="MentorMe Houston Logo"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-        <div
-          class="portfolio__gallery__card darker"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/CAN logo clr inline tagline.png"
-            alt="Church At Network Logo"
-            class="lazy portfolio__gallery__card__image small"
-          />
-        </div>
-        <div
-          class="portfolio__gallery__card darker"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/CUH Transp. Wht.png"
-            alt="Church At UH Logo"
-            class="lazy portfolio__gallery__card__image small"
-          />
-        </div>
-        <div
-          class="portfolio__gallery__card darker"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/houseChurchLight.png"
-            alt="House Church Logo"
-            class="lazy portfolio__gallery__card__image small"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card darker"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/RestorationCity.png"
-            alt="RestorationCity Logo"
-            class="lazy portfolio__gallery__card__image small"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Biblical Truth_3.jpg"
-            alt="Biblical Truth Value Graphic"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Internal Transformation_3.jpg"
-            alt="Internal Transformation Value Graphic"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/External Transformation_3.jpg"
-            alt="External Transformation Value Graphic"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Family_3.jpg"
-            alt="Family Value Graphic"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-
-        <div
-          class="portfolio__gallery__card"
-          data-aos="in-still"
-          data-delay="350"
-        >
-          <img
-            data-src="img/gallery/Spirit - Led_3.jpg"
-            alt="Spirit-Led Value Graphic"
-            class="lazy portfolio__gallery__card__image"
-          />
-        </div>
-      </div>
-
-      <h4 class="portfolio__music">
-        Hear some of my original and covered music on SoundCloud:
-      </h4>
-      <iframe
-        data-aos="in-still"
-        data-delay="200"
-        class="portfolio__music__soundcloud"
-        height="450"
-        scrolling="no"
-        frameborder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/980722258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      ></iframe> -->
-    </section>
-
-    <section id="contact" class="content contact">
-      <div class="contact__divider"></div>
-      <h2 class="content__title" data-aos="left">Contact</h2>
-      <div class="content__title-bar" data-aos="right" data-delay="300"></div>
-      <h4 class="contact__subtitle" data-aos="in-still" data-delay="500">
-        Interested in working with me?
-      </h4>
-      <div class="contact__links">
-        <a
-          data-aos="left"
-          data-delay="500"
-          class="contact__links__link"
-          href="tel:+2144608716"
-          >Call Me</a
-        >
-        <a
-          data-aos="right"
-          data-delay="500"
-          class="contact__links__link"
-          href="mailto:darren.harroff@gmail.com?subject=darrenharroff.me Contact: I'm Interested in Working With You!"
-          >Email Me</a
-        >
-      </div>
-    </section>
-
-    <section class="footer">
-      <div class="footer__footer-wrap">
-        <p class="footer__footer-wrap__copyright">&copy; 2020 Darren Harroff</p>
-        <a
-          href="https://www.darrenharroff.me"
-          class="footer__footer-wrap__site-link"
+        <a href="https://www.darrenharroff.me" class="footer__wrap__site-link"
           >darrenharroff.me</a
         >
       </div>
-      <a href="#" class="footer__back-to-top">^ Top</a>
-    </section>
+      <a href="#" class="footer__back-to-top">^</a>
+    </footer>
     <script src="https://darrenharroff.github.io/animate-on-scroll/aos.js"></script>
-
+    <script src="js/test.js"></script>
     <script src="js/canvas.js"></script>
     <script src="js/header&nav.js"></script>
-    <script src="js/animation.js"></script>
   </body>
 </html>

@@ -1,0 +1,25 @@
+:root {
+  --primaryClr: rgb(0, 128, 128);
+  --secClr: #181827;
+  --fontLight: rgb(240, 240, 240);
+  --fontDark: rgba(43, 43, 43, 0.7);
+  --textDarkHeading: rgb(43, 43, 43);
+  --bodyClrLight: white;
+  --bodyClrDark: rgb(41, 41, 41);
+
+  --barClr1: lighten($secClr, 15%);
+  --barClr2: rgb(126, 41, 41);
+  --barClr3: rgb(112, 80, 143);
+
+  --shadowLight: 0px 3px 5px rgba(0, 0, 0, 0.5);
+
+  --sectionPadding: 6rem;
+  --containerWidth: 93%;
+  --containerMaxWidth: 1200px;
+
+  --headerHeight: 50px;
+
+  --transitionFast: all 150ms ease-in-out;
+  --transitionMed: all 300ms ease-in-out;
+  --transitionSlow: all 500ms ease-in-out;
+}
