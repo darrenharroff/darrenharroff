@@ -1,4 +1,5 @@
 const cover = document.querySelector(".cover");
+const header = document.querySelector(".header");
 
 cover.style.height = `calc(${window.innerHeight}px - var(--headerHeight))`;
 
@@ -16,6 +17,12 @@ watchScreenWidth = (width) => {
 };
 
 watchScreenWidth(screenWidth);
+
 document.addEventListener("scroll", (e) => {
   watchScreenWidth(screenWidth);
+  if (window.scrollY >= 500) {
+    header.classList.add("anim");
+  } else {
+    header.classList.remove("anim");
+  }
 });

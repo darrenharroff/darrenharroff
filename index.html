@@ -37,63 +37,48 @@
 
   <body>
     <section class="cover">
+      <div class="cover__blob"></div>
       <div class="cover__wrap">
-        <img
-          src="icons/Darren Harroff Logo.png"
-          alt="Darren Harroff Icon"
-          class="cover__wrap__logo"
-          data-aos="in"
-        />
-        <h1 class="cover__wrap__title" data-aos="up" data-delay="300">
+        <div class="cover__wrap__logo-wrap" data-aos="up">
+          <img
+            src="icons/Darren Harroff Logo.png"
+            alt="Darren Harroff Icon"
+            class="cover__wrap__logo-wrap__logo"
+          />
+        </div>
+        <h1 class="cover__wrap__title" data-aos="left" data-delay="2000">
           <span>Hey, I'm</span>
           <span class="cover__wrap__title--name">Darren.</span>
           <br />
         </h1>
-        <h2 class="cover__wrap__subtitle" data-aos="up" data-delay="500">
+        <h2 class="cover__wrap__subtitle" data-aos="right" data-delay="2000">
           I'm a front-end web developer, designer, and more.
         </h2>
         <a
           href="#about"
           class="cover__wrap__button btn-1"
           data-aos="up"
-          data-delay="800"
+          data-delay="2000"
           ><button>Learn More</button></a
         >
         <div class="cover__wrap__icons">
-          <img
-            src="/img/blob-1.svg"
-            alt=""
-            class="cover__wrap__icons__blob cover__wrap__icons__blob--left"
-          />
-          <img
-            src="/img/blob-2.svg"
-            alt=""
-            class="cover__wrap__icons__blob cover__wrap__icons__blob--right"
-          />
-          <img
-            src="/icons/splashicons1.svg"
-            alt=""
-            class="cover__wrap__icons--left"
-            data-aos="left"
-            data-delay="500"
-          />
-          <img
-            src="/icons/splashicons2.svg"
-            alt=""
-            class="cover__wrap__icons--right"
-            data-aos="right"
-            data-delay="500"
-          />
+          <div class="cover__wrap__icons__wrap" data-aos="up" data-delay="1500">
+            <img
+              src="/icons/splashicons1.svg"
+              alt=""
+              class="cover__wrap__icons__wrap--left"
+            />
+            <img
+              src="/icons/splashicons2.svg"
+              alt=""
+              class="cover__wrap__icons__wrap--right"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <header
-      class="header"
-      data-aos
-      data-entrypoint="-50%"
-      data-reanimate="true"
-    >
+    <header class="header">
       <div class="header__logo-wrap">
         <img
           src="icons/Darren Harroff Logo.png"
@@ -156,7 +141,7 @@
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="200"
+              data-delay="400"
             >
               <img
                 src="/icons/front-end.svg"
@@ -196,7 +181,7 @@
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="300"
+              data-delay="500"
             >
               <img
                 src="/icons/design.svg"
@@ -213,7 +198,7 @@
               </h4>
               <ul class="about__wrap__skills__wrap__skill__content">
                 <li>Websites</li>
-                <li>UX/UI</li>
+                <li>UIs</li>
                 <li>Logos</li>
                 <li>Graphics</li>
                 <li>Icons</li>
@@ -231,7 +216,7 @@
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="400"
+              data-delay="600"
             >
               <img
                 src="/icons/shapes-and-symbols.svg"
@@ -290,7 +275,7 @@
               alt=""
               class="portfolio__wrap__projects__project-link__logo"
           /></a>
-          <!-- <a
+          <a
             href="http://www.restorationcity.org"
             target="_blank"
             class="portfolio__wrap__projects__project-link wordpress"
@@ -298,7 +283,7 @@
               src="/img/gallery/RCLineDark_small.png"
               alt=""
               class="portfolio__wrap__projects__project-link__logo"
-          /></a> -->
+          /></a>
         </div>
       </div>
     </section>
@@ -315,8 +300,8 @@
       <a href="#" class="footer__back-to-top">^</a>
     </footer>
     <script src="https://darrenharroff.github.io/animate-on-scroll/aos.js"></script>
+    <script src="js/blob.js"></script>
     <script src="js/style.js"></script>
-    <script src="js/canvas.js"></script>
     <script src="js/header&nav.js"></script>
   </body>
 </html>
