@@ -1,5 +1,5 @@
 :root {
-  --primaryClr: #008080;
+  --primaryClr: rgb(0, 128, 128);
   --primaryClrDarkened: #094b4b;
   --secClr: #181827;
   --fontLight: rgb(240, 240, 240);
@@ -11,14 +11,15 @@
   --borderClr: 2px solid rgb(235, 235, 235);
 
   --shadowLight: 0px 3px 4px rgba(0, 0, 0, 0.2);
+  --shadowMed: 0px 5px 7px rgba(0, 0, 0, 0.2);
 
   --containerWidth: 93%;
   --containerMaxWidth: 1200px;
 
   --spaceSm: 1rem;
-  --spaceMd: 2rem;
-  --spaceLg: 3rem;
-  --spaceXl: 5rem;
+  --spaceMd: 3rem;
+  --spaceLg: 5rem;
+  --spaceXl: 7rem;
 
   --headerHeight: 50px;
 

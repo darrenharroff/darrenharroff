@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+      color: var(--fontLight);
+      font-family: "Cervantis";
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-left: 1em;
+      user-select: none;
+      transition: var(--transitionFast);
+      text-shadow: var(--shadowLight);
+      &.scrolled {
+        opacity: 0;
+      }
+    }
+    &__menu-wrap {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 90vw;
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+      background-color: var(--bodyClrLight);
+      box-shadow: var(--shadowMed);
+      transform: translateX(110%);
+      transition: var(--transitionMed);
+      &__menu {
+        list-style: none;
+        width: 100%;
+        &__item {
+          width: 100%;
+          display: flex;
+          &__link {
+            text-decoration: none;
+            color: var(--fontDark);
+            font-weight: bold;
+            font-size: 1.7rem;
+            width: 100%;
+            padding: 0.5em 1.5em;
+            &:hover,
+            &:focus {
+              background-color: rgba(black, 0.05);
+            }
+          }
+        }
+      }
+    }
+    &__menu-toggle {
+      display: flex;
+      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      margin: 1em;
+      cursor: pointer;
+      position: relative;
+      &__bar {
+        position: absolute;
+        top: calc(50% - 2px);
+        left: calc(50% - 15px);
+        height: 4px;
+        width: 30px;
+        background-color: var(--fontDark);
+        transition: var(--transitionFast);
+        &:first-of-type {
+          transform: translateY(-5px);
+        }
+        &:last-of-type {
+          transform: translateY(5px);
+        }
+      }
+    }
+    &.toggled {
+      .header {
+        &__wrap {
+          &__menu-wrap {
+            transform: translateY(0);
+          }
+          &__menu-toggle {
+            &__bar:first-of-type {
+              transform: translateY(0) rotate(45deg);
+            }
+            &__bar:last-of-type {
+              transform: translateY(0) rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.anim {
+    .header {
+      &__logo-wrap {
+        &__logo {
+          transform: translateX(0) rotate(0);
+        }
+      }
+    }
+  }
+}

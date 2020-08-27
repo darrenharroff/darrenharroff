@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dual", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: no-common-ligatures;
+  background-color: var(--bodyClrLight);
+  color: var(--fontDark);
+  overflow-x: hidden;
+}
+
+section {
+  margin: var(--spaceXl) 0;
+}

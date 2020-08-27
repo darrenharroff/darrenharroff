@@ -36,57 +36,9 @@
   </head>
 
   <body>
-    <section class="cover">
-      <div class="cover__blob"></div>
-      <div class="cover__wrap">
-        <div class="cover__wrap__logo-wrap" data-aos="up">
-          <img
-            src="icons/Darren Harroff Logo.png"
-            alt="Darren Harroff Icon"
-            class="cover__wrap__logo-wrap__logo"
-          />
-        </div>
-        <h1 class="cover__wrap__title" data-aos="left" data-delay="2000">
-          <span>Hey, I'm</span>
-          <span class="cover__wrap__title--name">Darren.</span>
-          <br />
-        </h1>
-        <h2 class="cover__wrap__subtitle" data-aos="right" data-delay="2000">
-          I'm a front-end web developer, designer, and more.
-        </h2>
-        <a
-          href="#about"
-          class="cover__wrap__button btn-1"
-          data-aos="up"
-          data-delay="2000"
-          ><button>Learn More</button></a
-        >
-        <div class="cover__wrap__icons">
-          <div class="cover__wrap__icons__wrap" data-aos="up" data-delay="1500">
-            <img
-              src="/icons/splashicons1.svg"
-              alt=""
-              class="cover__wrap__icons__wrap--left"
-            />
-            <img
-              src="/icons/splashicons2.svg"
-              alt=""
-              class="cover__wrap__icons__wrap--right"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
     <header class="header">
-      <div class="header__logo-wrap">
-        <img
-          src="icons/Darren Harroff Logo.png"
-          alt="Darren Harroff Icon"
-          class="header__logo-wrap__logo"
-        />
-      </div>
       <div class="header__wrap">
+        <p class="header__wrap__logo">Darren Harroff</p>
         <div class="header__wrap__menu-wrap">
           <ul class="header__wrap__menu-wrap__menu">
             <li class="header__wrap__menu-wrap__menu__item">
@@ -122,14 +74,49 @@
       </div>
     </header>
 
+    <div class="cover">
+      <div class="cover__wrap">
+        <div class="cover__wrap__img-wrap" data-aos="left" data-delay="400">
+          <div class="overlay"></div>
+          <img
+            src="img/darrenharroff.jpg"
+            alt=""
+            class="cover__wrap__img-wrap__img"
+          />
+        </div>
+        <div class="cover__wrap__content">
+          <div
+            class="cover__wrap__content__wrap"
+            data-aos="right"
+            data-delay="50"
+          >
+            <h1
+              class="cover__wrap__content__wrap__title"
+              data-aos="right"
+              data-delay="300"
+            >
+              Front-end developer, designer, & more
+            </h1>
+            <h2
+              class="cover__wrap__content__wrap__subtitle"
+              data-aos="right"
+              data-delay="300"
+            >
+              I make simple, beautiful websites.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="about" class="about">
-      <div class="about__wrap">
+      <div class="about__wrap container">
         <div class="about__wrap__intro">
-          <h2 class="about__wrap__intro__title">
-            Nice to meet you <span>(virtually)</span> !
+          <h2 class="about__wrap__intro__title section-title" data-aos="up">
+            Hi, I'm <span>Darren Harroff.</span>
           </h2>
-          <p class="about__wrap__intro__desc">
-            I am a front-end web developer & designer. Since beginning my
+          <p class="about__wrap__intro__desc" data-aos="up" data-delay="200">
+            I am a front-end web developer, designer, & more. Since beginning my
             journey in web development in 2018, I have enjoyed helping small
             businesses, non-profits, and individuals find their place on the web
             simply and affordably. I love learning, taking on new challenges,
@@ -137,11 +124,11 @@
           </p>
         </div>
         <div class="about__wrap__skills">
-          <div class="about__wrap__skills__wrap" data-aos="up">
+          <div class="about__wrap__skills__wrap">
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="400"
+              data-delay="200"
             >
               <img
                 src="/icons/front-end.svg"
@@ -171,8 +158,7 @@
               <ul class="about__wrap__skills__wrap__skill__content">
                 <li>VS Code</li>
                 <li>Netlify</li>
-                <li>Git</li>
-                <li>Github</li>
+                <li>Git & Github</li>
                 <li>WordPress</li>
                 <!-- <span>Qwikli</span> -->
               </ul>
@@ -181,7 +167,7 @@
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="500"
+              data-delay="300"
             >
               <img
                 src="/icons/design.svg"
@@ -216,7 +202,7 @@
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
-              data-delay="600"
+              data-delay="400"
             >
               <img
                 src="/icons/shapes-and-symbols.svg"
@@ -255,35 +241,125 @@
 
     <section id="portfolio" class="portfolio">
       <div class="portfolio__wrap">
-        <h2 class="portfolio__wrap__title">A Few Recent Works</h2>
-        <div class="portfolio__wrap__projects">
+        <h2 class="portfolio__wrap__title section-title" data-aos="up">
+          A Few Recent Works
+        </h2>
+        <div class="portfolio__wrap__projects" data-aos="up" data-delay="400">
+          <div class="portfolio__wrap__projects__project-card">
+            <div class="portfolio__wrap__projects__project-card__wrap">
+              <img
+                src="/img/gallery/city.jpg"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__img"
+              /><img
+                src="/img/gallery/CAN logo wht inline tagline.png"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__logo"
+              />
+              <div
+                class="portfolio__wrap__projects__project-card__wrap__content"
+              >
+                <h4
+                  class="portfolio__wrap__projects__project-card__wrap__content__title"
+                >
+                  Church At Network
+                </h4>
+                <p
+                  class="portfolio__wrap__projects__project-card__wrap__content__desc"
+                >
+                  Church | Religious Non-Profit
+                </p>
+                <a
+                  href="https://www.churchatnetwork.org"
+                  class="portfolio__wrap__projects__project-card__wrap__content__btn btn-1"
+                  target="_blank"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__wrap__projects__project-card">
+            <div class="portfolio__wrap__projects__project-card__wrap">
+              <img
+                src="/img/gallery/waves.jpg"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__img"
+              /><img
+                src="/img/gallery/meetwithabba_white.png"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__logo"
+              />
+              <div
+                class="portfolio__wrap__projects__project-card__wrap__content"
+              >
+                <h4
+                  class="portfolio__wrap__projects__project-card__wrap__content__title"
+                >
+                  Meet With Abba
+                </h4>
+                <p
+                  class="portfolio__wrap__projects__project-card__wrap__content__desc"
+                >
+                  Religious Non-Profit | Counseling
+                </p>
+                <a
+                  href="https://www.meetwithabba.org"
+                  class="portfolio__wrap__projects__project-card__wrap__content__btn btn-1"
+                  target="_blank"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__wrap__projects__project-card">
+            <div class="portfolio__wrap__projects__project-card__wrap">
+              <img
+                src="/img/gallery/family.jpg"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__img"
+              /><img
+                src="/img/gallery/RCLineWht_retina.png"
+                alt=""
+                class="portfolio__wrap__projects__project-card__wrap__logo"
+              />
+              <div
+                class="portfolio__wrap__projects__project-card__wrap__content"
+              >
+                <h4
+                  class="portfolio__wrap__projects__project-card__wrap__content__title"
+                >
+                  Restoration City
+                </h4>
+                <p
+                  class="portfolio__wrap__projects__project-card__wrap__content__desc"
+                >
+                  Religious Non-Profit | Rehabilitation
+                </p>
+                <a
+                  href="http://www.restorationcity.org"
+                  class="portfolio__wrap__projects__project-card__wrap__content__btn btn-1"
+                  target="_blank"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__wrap__contact" id="contact">
           <a
-            href="https://www.churchatnetwork.org"
-            target="_blank"
-            class="portfolio__wrap__projects__project-link"
-            ><img
-              src="/img/gallery/CAN logo clr inline tagline outlined.png"
-              alt=""
-              class="portfolio__wrap__projects__project-link__logo"
-          /></a>
-          <a
-            href="https://www.meetwithabba.org"
-            target="_blank"
-            class="portfolio__wrap__projects__project-link"
-            ><img
-              src="/img/gallery/meetwithabba_dark.png"
-              alt=""
-              class="portfolio__wrap__projects__project-link__logo"
-          /></a>
-          <a
-            href="http://www.restorationcity.org"
-            target="_blank"
-            class="portfolio__wrap__projects__project-link wordpress"
-            ><img
-              src="/img/gallery/RCLineDark_small.png"
-              alt=""
-              class="portfolio__wrap__projects__project-link__logo"
-          /></a>
+            href="mailto:darren.harroff@gmail.com?subject=Portfolio Contact - Web Developement & Design Interest"
+            class="portfolio__wrap__contact__btn btn-2"
+            data-aos="left"
+            >Email Me</a
+          >
+          <p
+            class="portfolio__wrap__contact__text"
+            data-aos="right"
+            data-delay="300"
+          >
+            for more, or if you're interested in having your own simple,
+            beautiful website!
+          </p>
         </div>
       </div>
     </section>
@@ -300,8 +376,7 @@
       <a href="#" class="footer__back-to-top">^</a>
     </footer>
     <script src="https://darrenharroff.github.io/animate-on-scroll/aos.js"></script>
-    <script src="js/blob.js"></script>
-    <script src="js/style.js"></script>
     <script src="js/header&nav.js"></script>
+    <script src="js/movement.js"></script>
   </body>
 </html>
