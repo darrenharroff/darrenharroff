@@ -64,7 +64,8 @@
         transition: var(--transitionSlow);
         animation: bounce 3000ms ease-in-out infinite;
         &:hover {
-          background-color: var(--bodyClrLight);
+          background-color: var(--primaryClr);
+          color: var(--fontLight);
         }
         &__icon {
           width: 15px;
@@ -363,6 +364,7 @@
   .portfolio__wrap {
     &__projects {
       flex-direction: column;
+      height: 120vh;
       &__project-card {
         height: 300px;
       }
