@@ -4,6 +4,7 @@
 }
 
 .btn-1 {
+  font-family: "Dual", Helvetica, Arial, sans-serif;
   @include flex-center;
   width: 140px;
   height: 45px;
@@ -29,7 +30,9 @@
 }
 
 .btn-2 {
+  font-family: "Dual", Helvetica, Arial, sans-serif;
   @include flex-center;
+  border: none;
   background-color: var(--primaryClr);
   border-radius: 50px;
   color: var(--fontLight);

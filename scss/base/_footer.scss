@@ -1,10 +1,12 @@
 .footer {
   display: flex;
-  width: 100%;
+  width: 100vw;
   min-height: 50px;
   height: auto;
   background-color: var(--primaryClr);
   position: relative;
+  font-weight: bold;
+
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -20,7 +22,7 @@
   }
   &__back-to-top {
     position: absolute;
-    right: 20px;
+    right: 5%;
     top: 0;
     transform: translateY(-50%);
     background-color: var(--bodyClrLight);
@@ -29,12 +31,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primaryClr);
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
     border-radius: 50px;
-    box-shadow: var(--shadowLight);
+    box-shadow: var(--shadowMed);
+    cursor: pointer;
+    img {
+      width: 30%;
+      transform: rotate(180deg);
+    }
   }
 }
 

@@ -1,13 +1,12 @@
 .cover {
   height: 100vh;
-  width: 100vw;
+  margin: 0;
   &__wrap {
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
-
     &__img-wrap {
       width: 50%;
       max-width: 805px;
@@ -27,6 +26,15 @@
       z-index: 2;
       @include center;
       transition: all 200ms ease-out;
+      &--bg {
+        @include center;
+
+        width: 30%;
+        height: 50%;
+        background-color: var(--fontLight);
+        z-index: -1;
+        transition: all 200ms ease-out;
+      }
       &__wrap {
         background-color: var(--bodyClrLight);
         display: flex;
@@ -42,11 +50,35 @@
         }
       }
     }
+    &__call-to-action {
+      position: absolute;
+      bottom: 10%;
+      right: 15%;
+      z-index: 3;
+      cursor: pointer;
+      &__wrap {
+        @include flex-center;
+        padding: 1em;
+        font-size: 1.1rem;
+        background-color: var(--fontLight);
+        transition: var(--transitionSlow);
+        animation: bounce 3000ms ease-in-out infinite;
+        &:hover {
+          background-color: var(--bodyClrLight);
+        }
+        &__icon {
+          width: 15px;
+          margin-left: 0.7em;
+        }
+        &.scrolled {
+          opacity: 0;
+        }
+      }
+    }
   }
 }
 
 .about {
-  width: 100%;
   padding-top: var(--spaceXl);
   margin-top: 0;
   &__wrap {
@@ -58,7 +90,7 @@
       margin: 0 auto var(--spaceXl);
       &__title {
         span {
-          font-family: "Cervantis";
+          font-family: "Cervantis", Helvetica, Arial, sans-serif;
         }
       }
       &__desc {
@@ -67,11 +99,9 @@
       }
     }
     &__skills {
-      @include full-width;
       background-color: var(--fontLight);
       padding: var(--spaceXl) 2em;
       &__wrap {
-        @include contain;
         display: flex;
         &__skill {
           flex: 1;
@@ -207,18 +237,104 @@
         }
       }
     }
-    &__contact {
-      @include contain;
+  }
+}
+
+.contact {
+  &__wrap {
+    @include contain;
+    &__form {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: var(--spaceXl) 0 0;
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1em;
       & > * {
-        margin: 0.4em;
+        margin-bottom: 2.5em;
       }
-      &__text {
-        font-weight: bold;
-        line-height: 1.5em;
+      * {
+        font-family: "Dual", Helvetica, Arial, sans-serif;
+      }
+      &__title {
+        grid-column: 1/-1;
+      }
+      &__item {
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid var(--fontLight);
+        &__label {
+          font-weight: bold;
+          position: absolute;
+          top: 35%;
+          left: 1em;
+          transition: var(--transitionFast);
+          &.active {
+            top: -25px;
+          }
+        }
+        &__input {
+          border: none;
+          height: 40px;
+          width: 100%;
+          padding: 1em;
+          font-size: 1rem;
+          &:focus {
+            background-color: var(--fontLight);
+            outline: 2px solid var(--primaryClr);
+          }
+          &--textarea {
+            resize: none;
+            height: 100px;
+            width: 100%;
+            background-color: transparent;
+          }
+        }
+        &.full-width {
+          grid-column: 1/-1;
+        }
+      }
+      &__subtitle {
+        grid-column: 1/-1;
+      }
+      &__options {
+        grid-column: 1/-1;
+        @include flex-center;
+        flex-wrap: wrap;
+        &__option {
+          @include flex-center;
+          margin: 1em;
+          flex: 0 1 200px;
+          cursor: pointer;
+          @include for-small-tablet-down {
+            justify-content: flex-start;
+          }
+          &__custom-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primaryClr);
+            border-radius: 3px;
+            margin-right: 1em;
+            cursor: pointer;
+          }
+          &__text {
+            font-weight: bold;
+            user-select: none;
+          }
+          &__checkbox {
+            display: none;
+          }
+          &.filled {
+            .contact__wrap__form__options__option__custom-checkbox {
+              background-color: var(--primaryClr);
+            }
+          }
+        }
+      }
+      &__submit {
+        grid-column: 1/-1;
+        max-width: 300px;
+        width: 100%;
+        justify-self: center;
       }
     }
   }
@@ -235,6 +351,11 @@
           &__subtitle {
             font-size: 1rem;
           }
+        }
+      }
+      &__call-to-action {
+        &__wrap {
+          font-size: 0.85rem;
         }
       }
     }

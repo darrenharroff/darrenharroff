@@ -17,9 +17,11 @@
       margin-left: 1em;
       user-select: none;
       transition: var(--transitionFast);
-      text-shadow: var(--shadowLight);
       &.scrolled {
         opacity: 0;
+      }
+      @include for-mobile {
+        font-size: 1.2rem;
       }
     }
     &__menu-wrap {
@@ -94,15 +96,6 @@
               transform: translateY(0) rotate(-45deg);
             }
           }
-        }
-      }
-    }
-  }
-  &.anim {
-    .header {
-      &__logo-wrap {
-        &__logo {
-          transform: translateX(0) rotate(0);
         }
       }
     }

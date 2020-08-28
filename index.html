@@ -74,7 +74,7 @@
       </div>
     </header>
 
-    <div class="cover">
+    <section class="cover">
       <div class="cover__wrap">
         <div class="cover__wrap__img-wrap" data-aos="left" data-delay="400">
           <div class="overlay"></div>
@@ -106,11 +106,26 @@
             </h2>
           </div>
         </div>
+        <div
+          class="cover__wrap__call-to-action"
+          data-aos="right"
+          data-delay="2000"
+          data-entrypoint="40%"
+        >
+          <div class="cover__wrap__call-to-action__wrap">
+            <h3 class="cover__wrap__call-to-action__wrap__text">Learn More</h3>
+            <img
+              src="/icons/down-arrow.svg"
+              alt=""
+              class="cover__wrap__call-to-action__wrap__icon"
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <section id="about" class="about">
-      <div class="about__wrap container">
+      <div class="about__wrap">
         <div class="about__wrap__intro">
           <h2 class="about__wrap__intro__title section-title" data-aos="up">
             Hi, I'm <span>Darren Harroff.</span>
@@ -124,7 +139,7 @@
           </p>
         </div>
         <div class="about__wrap__skills">
-          <div class="about__wrap__skills__wrap">
+          <div class="about__wrap__skills__wrap container">
             <div
               class="about__wrap__skills__wrap__skill"
               data-aos="up"
@@ -244,7 +259,11 @@
         <h2 class="portfolio__wrap__title section-title" data-aos="up">
           A Few Recent Works
         </h2>
-        <div class="portfolio__wrap__projects" data-aos="up" data-delay="400">
+        <div
+          class="portfolio__wrap__projects"
+          data-aos="in-still"
+          data-delay="400"
+        >
           <div class="portfolio__wrap__projects__project-card">
             <div class="portfolio__wrap__projects__project-card__wrap">
               <img
@@ -345,22 +364,165 @@
             </div>
           </div>
         </div>
-        <div class="portfolio__wrap__contact" id="contact">
-          <a
-            href="mailto:darren.harroff@gmail.com?subject=Portfolio Contact - Web Developement & Design Interest"
-            class="portfolio__wrap__contact__btn btn-2"
-            data-aos="left"
-            >Email Me</a
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__wrap container">
+        <form netlify name="Contact" method="POST" class="contact__wrap__form">
+          <h2 class="contact__wrap__form__title" data-aos="left">
+            Let's build something beautiful:
+          </h2>
+          <div class="contact__wrap__form__item" data-aos="up" data-delay="200">
+            <label class="contact__wrap__form__item__label" for="name"
+              >Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact__wrap__form__item__input"
+              required
+            />
+          </div>
+          <div class="contact__wrap__form__item" data-aos="up" data-delay="200">
+            <label class="contact__wrap__form__item__label" for="email"
+              >Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact__wrap__form__item__input"
+              required
+            />
+          </div>
+          <div class="contact__wrap__form__item" data-aos="up" data-delay="200">
+            <label class="contact__wrap__form__item__label" for="phone"
+              >Phone
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="contact__wrap__form__item__input"
+              required
+            />
+          </div>
+          <div
+            class="contact__wrap__form__item full-width"
+            data-aos="up"
+            data-delay="200"
           >
-          <p
-            class="portfolio__wrap__contact__text"
+            <label class="contact__wrap__form__item__label" for="details"
+              >Details</label
+            >
+            <textarea
+              name="details"
+              id="details"
+              class="contact__wrap__form__item__input contact__wrap__form__item__input--textarea"
+              required
+            ></textarea>
+          </div>
+          <h2
+            class="contact__wrap__form__subtitle"
             data-aos="right"
-            data-delay="300"
+            data-delay="200"
           >
-            for more, or if you're interested in having your own simple,
-            beautiful website!
-          </p>
-        </div>
+            I need help with:
+          </h2>
+
+          <div
+            class="contact__wrap__form__options"
+            data-aos="up"
+            data-delay="200"
+          >
+            <label for="website" class="contact__wrap__form__options__option">
+              <div
+                class="contact__wrap__form__options__option__custom-checkbox"
+                tabindex="0"
+              ></div>
+              <p class="contact__wrap__form__options__option__text">
+                Website Design
+              </p>
+              <input
+                type="checkbox"
+                name="website"
+                id="website"
+                class="contact__wrap__form__options__option__checkbox"
+              />
+            </label>
+
+            <label for="branding" class="contact__wrap__form__options__option">
+              <div
+                class="contact__wrap__form__options__option__custom-checkbox"
+                tabindex="0"
+              ></div>
+              <p class="contact__wrap__form__options__option__text">Branding</p>
+              <input
+                type="checkbox"
+                name="branding"
+                id="branding"
+                class="contact__wrap__form__options__option__checkbox"
+              />
+            </label>
+
+            <label for="ecommerce" class="contact__wrap__form__options__option">
+              <div
+                class="contact__wrap__form__options__option__custom-checkbox"
+                tabindex="0"
+              ></div>
+              <p class="contact__wrap__form__options__option__text">
+                eCommerce
+              </p>
+              <input
+                type="checkbox"
+                name="ecommerce"
+                id="ecommerce"
+                class="contact__wrap__form__options__option__checkbox"
+              />
+            </label>
+
+            <label for="marketing" class="contact__wrap__form__options__option">
+              <div
+                class="contact__wrap__form__options__option__custom-checkbox"
+                tabindex="0"
+              ></div>
+              <p class="contact__wrap__form__options__option__text">
+                Marketing
+              </p>
+              <input
+                type="checkbox"
+                name="marketing"
+                id="marketing"
+                class="contact__wrap__form__options__option__checkbox"
+              />
+            </label>
+
+            <label for="other" class="contact__wrap__form__options__option">
+              <div
+                class="contact__wrap__form__options__option__custom-checkbox"
+                tabindex="0"
+              ></div>
+              <p class="contact__wrap__form__options__option__text">Other</p>
+              <input
+                type="checkbox"
+                name="other"
+                id="other"
+                class="contact__wrap__form__options__option__checkbox"
+              />
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="contact__wrap__form__submit btn-2"
+            data-aos="up"
+            data-delay="600"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </section>
 
@@ -373,10 +535,13 @@
           >darrenharroff.me</a
         >
       </div>
-      <a href="#" class="footer__back-to-top">^</a>
+      <div class="footer__back-to-top">
+        <img src="/icons/down-arrow.svg" alt="top" />
+      </div>
     </footer>
     <script src="https://darrenharroff.github.io/animate-on-scroll/aos.js"></script>
-    <script src="js/header&nav.js"></script>
-    <script src="js/movement.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/header&nav.js"></script>
+    <script src="/js/movement.js"></script>
   </body>
 </html>
