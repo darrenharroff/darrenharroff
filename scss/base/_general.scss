@@ -7,10 +7,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 body {
-  font-family: "Dual", Helvetica, Arial, sans-serif;
+  font-family: "Mulish", Helvetica, Arial, sans-serif;
   font-variant-ligatures: no-common-ligatures;
   background-color: var(--bodyClrLight);
   color: var(--fontDark);

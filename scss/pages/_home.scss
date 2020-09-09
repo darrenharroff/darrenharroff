@@ -22,7 +22,7 @@
     }
     &__content {
       width: 90%;
-      max-width: 600px;
+      max-width: 650px;
       z-index: 2;
       @include center;
       transition: all 200ms ease-out;
@@ -47,6 +47,9 @@
           margin-bottom: 0.5em;
           line-height: 1.1em;
           letter-spacing: 1px;
+        }
+        &__subtitle {
+          font-weight: lighter;
         }
       }
     }
@@ -89,9 +92,11 @@
       width: 90%;
       max-width: 600px;
       margin: 0 auto var(--spaceXl);
+      text-align: justify;
       &__title {
         span {
           font-family: "Cervantis", Helvetica, Arial, sans-serif;
+          font-size: 1.2em;
         }
       }
       &__desc {
@@ -254,7 +259,7 @@
         margin-bottom: 2.5em;
       }
       * {
-        font-family: "Dual", Helvetica, Arial, sans-serif;
+        font-family: "Mulish", Helvetica, Arial, sans-serif;
       }
       &__title {
         grid-column: 1/-1;
