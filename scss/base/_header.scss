@@ -57,6 +57,19 @@
           }
         }
       }
+      &__copyright {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        color: var(--fontDark);
+        font-size: 0.85rem;
+        opacity: 0.5;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     &__menu-toggle {
       display: flex;
