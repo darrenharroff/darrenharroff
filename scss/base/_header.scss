@@ -79,6 +79,7 @@
       margin: 1em;
       cursor: pointer;
       position: relative;
+      background-color: var(--bodyClrLight);
       &__bar {
         position: absolute;
         top: calc(50% - 2px);
