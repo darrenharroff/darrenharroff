@@ -15,15 +15,10 @@ window.onmousemove = function (e) {
 
   coverTitle.style.transform = `translate(calc(-50% - ${
     mouseX / moveFactor
-  }px),calc(-50% - ${mouseY / moveFactor}px))`;
+  }px),calc(-50%))`;
 };
 
 window.onscroll = function (e) {
-  if (window.scrollY >= window.innerHeight) {
-    headerText.classList.add("scrolled");
-  } else {
-    headerText.classList.remove("scrolled");
-  }
   if (window.scrollY >= window.innerHeight / 4) {
     callToAction.classList.add("scrolled");
   } else {

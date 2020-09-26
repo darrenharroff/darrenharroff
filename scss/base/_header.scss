@@ -17,9 +17,7 @@
       margin-left: 1em;
       user-select: none;
       transition: var(--transitionFast);
-      &.scrolled {
-        opacity: 0;
-      }
+
       @include for-mobile {
         font-size: 1.2rem;
       }
@@ -33,7 +31,7 @@
       max-width: 300px;
       display: flex;
       align-items: center;
-      background-color: var(--bodyClrLight);
+      background-color: var(--bodyClrDark);
       box-shadow: var(--shadowMed);
       transform: translateX(110%);
       transition: var(--transitionMed);
@@ -45,14 +43,18 @@
           display: flex;
           &__link {
             text-decoration: none;
-            color: var(--fontDark);
-            font-weight: bold;
+            color: var(--fontLight);
+            font-weight: normal;
             font-size: 1.7rem;
             width: 100%;
             padding: 0.5em 1.5em;
+            transition: var(--transitionMed);
+            opacity: 0.5;
             &:hover,
             &:focus {
-              background-color: rgba(black, 0.05);
+              background-color: rgba(white, 0.1);
+              border-left: 5px solid var(--fontLight);
+              opacity: 1;
             }
           }
         }
@@ -62,7 +64,6 @@
         bottom: 10px;
         left: 0;
         right: 0;
-        color: var(--fontDark);
         font-size: 0.85rem;
         opacity: 0.5;
         width: 100%;
@@ -79,14 +80,13 @@
       margin: 1em;
       cursor: pointer;
       position: relative;
-      background-color: var(--bodyClrLight);
       &__bar {
         position: absolute;
         top: calc(50% - 2px);
         left: calc(50% - 15px);
-        height: 4px;
+        height: 2px;
         width: 30px;
-        background-color: var(--fontDark);
+        background-color: var(--fontLight);
         transition: var(--transitionFast);
         &:first-of-type {
           transform: translateY(-5px);
