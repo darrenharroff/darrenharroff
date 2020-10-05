@@ -3,9 +3,10 @@
   width: 100vw;
   min-height: 50px;
   height: auto;
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   position: relative;
   font-weight: normal;
+  box-shadow: 10px -10px 20px -15px black;
 
   &__wrap {
     display: flex;

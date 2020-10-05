@@ -15,11 +15,11 @@ body {
   font-variant-ligatures: no-common-ligatures;
   background-color: var(--bodyClrDark);
   color: var(--fontLight);
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 
 section {
   margin: var(--spaceXl) 0;
-  width: 100vw;
+  width: 100%;
 }

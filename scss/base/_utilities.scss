@@ -4,7 +4,7 @@
 }
 
 .btn-1 {
-  font-family: "Dual", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   @include flex-center;
   width: 140px;
   height: 45px;
@@ -30,7 +30,7 @@
 }
 
 .btn-2 {
-  font-family: "Dual", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   @include flex-center;
   border: none;
   background-color: var(--primaryClr);
@@ -61,7 +61,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  z-index: 1;
+  z-index: 3;
   opacity: 0.75;
   &.main {
     opacity: 0;

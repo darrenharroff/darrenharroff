@@ -21,11 +21,10 @@
       }
     }
     &__content {
-      width: 95%;
+      width: 85%;
       max-width: 1150px;
       z-index: 2;
       @include center;
-      left: 60%;
       transition: all 200ms ease-out;
       &__wrap {
         display: flex;
@@ -80,9 +79,8 @@
       display: flex;
       flex-direction: column;
       width: 90%;
-      max-width: 600px;
+      max-width: 620px;
       margin: 0 auto var(--spaceXl);
-      text-align: justify;
       &__title {
         span {
           font-family: "Cervantis", Helvetica, Arial, sans-serif;
@@ -90,82 +88,107 @@
         }
       }
       &__desc {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.5em;
       }
     }
     &__skills {
       padding: 0;
+      background: linear-gradient(
+        to right,
+        transparent 50%,
+        rgb(29, 29, 29) 50%
+      );
+      @include for-large-tablet-down {
+        background: none;
+      }
       &__wrap {
         display: flex;
         flex-direction: column;
         &__skill {
           display: flex;
           width: 100%;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
           text-align: left;
           padding: 0;
-          height: 65vh;
-          margin-bottom: 4em;
-          &:nth-of-type(2) {
-            flex-direction: row-reverse;
-          }
+          height: 100vh;
 
           &__title-wrap {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            width: 40%;
-            height: 100%;
-            margin: 0 6em;
+            width: 50%;
+            padding: 4rem;
+            position: sticky;
+            top: 45%;
 
             &__title {
               font-weight: bold;
-              font-size: 2.5rem;
+              font-size: 3rem;
               margin-bottom: 0.25em;
             }
             &__desc {
-              font-size: 1rem;
+              font-size: 1.2rem;
             }
           }
           &__details-wrap {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
-            width: 60%;
+            width: 50%;
             height: 100%;
-            background-color: rgb(29, 29, 29);
+            padding: 0 4rem;
+
             &__detail {
-              width: 35%;
-              &:last-of-type {
-                border-right: 2px solid var(--fontLight);
-              }
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
               &__subtitle {
                 color: var(--primaryClr);
-                font-size: 1.2rem;
+                font-size: 2rem;
+                margin-bottom: 0.5em;
               }
               &__content {
                 list-style: none;
-                font-size: 1rem;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-between;
                 li {
-                  margin-bottom: 0.3em;
+                  margin-top: 1em;
                 }
               }
             }
           }
           @include for-large-tablet-down {
             flex-direction: column;
-            &:nth-of-type(2) {
-              flex-direction: column;
-            }
+            margin-bottom: 4em;
+            height: auto;
             &__title-wrap {
               width: 100%;
+              position: relative;
+              top: unset;
+              padding: 2rem 0;
             }
             &__details-wrap {
               width: 100%;
               justify-content: space-around;
+              padding: 0;
+              &__detail {
+                &__subtitle {
+                  margin-top: 2rem;
+                }
+                &__content {
+                  flex-direction: row;
+                  font-size: 1.2em;
+                }
+              }
             }
           }
         }
@@ -270,7 +293,7 @@
         margin-bottom: 2.5em;
       }
       * {
-        font-family: "Mulish", Helvetica, Arial, sans-serif;
+        font-family: "Poppins", Helvetica, Arial, sans-serif;
       }
       &__title {
         grid-column: 1/-1;
@@ -383,7 +406,6 @@
   .portfolio__wrap {
     &__projects {
       flex-direction: column;
-      height: 120vh;
       &__project-card {
         height: 300px;
       }

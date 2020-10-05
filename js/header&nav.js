@@ -13,3 +13,8 @@ headerWrap.addEventListener("click", (e) => {
     mainOverlay.classList.toggle("open");
   }
 });
+
+mainOverlay.addEventListener("click", (e) => {
+  headerWrap.classList.toggle("toggled");
+  mainOverlay.classList.toggle("open");
+});
