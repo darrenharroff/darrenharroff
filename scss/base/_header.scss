@@ -38,7 +38,7 @@
       background-color: var(--bodyClrDark);
       box-shadow: -10px 10px 20px -15px rgba(black, 1);
       transform: translateX(110%);
-      transition: var(--transitionMed);
+      transition: all 500ms ease-out;
       &__menu {
         list-style: none;
         width: 100%;

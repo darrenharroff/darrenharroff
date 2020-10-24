@@ -79,17 +79,17 @@
       display: flex;
       flex-direction: column;
       width: 90%;
-      max-width: 620px;
+      max-width: 1025px;
       margin: 0 auto var(--spaceXl);
       &__title {
         span {
-          font-family: "Cervantis", Helvetica, Arial, sans-serif;
-          font-size: 1.2em;
+          font-weight: bold;
+          font-size: 1.25em;
         }
       }
       &__desc {
         font-size: 1.2rem;
-        line-height: 1.5em;
+        line-height: 2em;
       }
     }
     &__skills {
@@ -120,14 +120,15 @@
             justify-content: center;
             align-items: flex-start;
             width: 50%;
-            padding: 4rem;
+            padding: 7rem 10rem 7rem 0;
             position: sticky;
-            top: 45%;
+            top: 35%;
 
             &__title {
               font-weight: bold;
               font-size: 3rem;
               margin-bottom: 0.25em;
+              line-height: 1em;
             }
             &__desc {
               font-size: 1.2rem;
@@ -136,11 +137,11 @@
           &__details-wrap {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             align-items: center;
             width: 50%;
             height: 100%;
-            padding: 0 4rem;
+            padding: 7rem 0 0 10rem;
 
             &__detail {
               width: 100%;
@@ -148,14 +149,16 @@
               flex-direction: column;
               justify-content: center;
               align-items: flex-start;
+              margin-bottom: 5em;
               &__subtitle {
                 color: var(--primaryClr);
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-bottom: 0.5em;
+                line-height: 1em;
               }
               &__content {
                 list-style: none;
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -168,8 +171,11 @@
           }
           @include for-large-tablet-down {
             flex-direction: column;
-            margin-bottom: 4em;
+            margin-bottom: 5em;
             height: auto;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
             &__title-wrap {
               width: 100%;
               position: relative;
@@ -181,9 +187,7 @@
               justify-content: space-around;
               padding: 0;
               &__detail {
-                &__subtitle {
-                  margin-top: 2rem;
-                }
+                margin-bottom: 2em;
                 &__content {
                   flex-direction: row;
                   font-size: 1.2em;
@@ -205,6 +209,7 @@
     width: 100%;
     & .section-title {
       width: auto;
+      padding-top: 0;
     }
     &__title {
       padding: 1em;
@@ -417,6 +422,9 @@
         margin-top: 1em;
       }
     }
+  }
+  .about__wrap__skills__wrap__skill__details-wrap__detail {
+    margin-bottom: 2em;
   }
 }
 
