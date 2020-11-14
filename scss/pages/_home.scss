@@ -79,7 +79,7 @@
       display: flex;
       flex-direction: column;
       width: 90%;
-      max-width: 1025px;
+      max-width: 70ch;
       margin: 0 auto var(--spaceXl);
       &__title {
         span {
@@ -112,7 +112,7 @@
           justify-content: center;
           text-align: left;
           padding: 0;
-          height: 100vh;
+          min-height: 100vh;
 
           &__title-wrap {
             display: flex;
@@ -173,6 +173,7 @@
             flex-direction: column;
             margin-bottom: 5em;
             height: auto;
+            min-height: 70vh;
             &:last-of-type {
               margin-bottom: 0;
             }
@@ -180,7 +181,7 @@
               width: 100%;
               position: relative;
               top: unset;
-              padding: 2rem 0;
+              padding: 4rem 0;
             }
             &__details-wrap {
               width: 100%;
