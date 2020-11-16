@@ -164,7 +164,7 @@
                 width: 100%;
                 justify-content: space-between;
                 li {
-                  margin: 1em;
+                  margin: 1em 1em 0 0;
                 }
               }
             }
@@ -191,7 +191,11 @@
                 margin-bottom: 2em;
                 &__content {
                   flex-direction: row;
+                  justify-content: space-around;
                   font-size: 1.2em;
+                  @include for-mobile {
+                    flex-direction: column;
+                  }
                 }
               }
             }
@@ -309,7 +313,7 @@
         width: 100%;
         border-bottom: 2px solid rgba(white, 0.1);
         &__label {
-          font-weight: bold;
+          font-weight: normal;
           position: absolute;
           top: 35%;
           left: 1em;
